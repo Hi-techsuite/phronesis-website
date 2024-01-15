@@ -47,3 +47,12 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .footer_div {
+    padding: 3em 0em;
+  }
+  .footer_div_area_1 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
