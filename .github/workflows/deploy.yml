@@ -29,8 +29,8 @@ jobs:
         server: ${{secrets.server}}
         username: ${{secrets.username}}
         password: ${{secrets.password }}
-        local-dir: /build/
         server-dir: /phronesis.vitalskillsda.com/
+        local-dir: ./build/
 
     # - name: "Setup Environmental variables and Migration Now"
     #   run:  |
