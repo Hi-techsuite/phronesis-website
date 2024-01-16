@@ -16,8 +16,8 @@ jobs:
       with:
         node-version: '16'
       
-    - name: 🔨 Installing Node Modules Project
-      run:  npm ci
+    # - name: 🔨 Installing Node Modules Project
+    #   run:  npm ci
     
     # - name: Building project
     #   run: npm run build --if-present
@@ -32,16 +32,16 @@ jobs:
         # local-dir: /build/
         server-dir: /phronesis.vitalskillsda.com/
 
-    - name: "Setup Environmental variables and Migration Now"
-      run:  |
-        touch .env
-        # echo APP_PORT=${{secrets.APP_PORT}} >> .env
-        # echo DB_PORT=${{secrets.DB_PORT}} >> .env
-        # echo NODE_ENV=${{secrets.NODE_ENV}} >> .env
-        echo DEV_USERNAME=${{secrets.DEV_USERNAME}} >> .env
-        echo DEV_PASSWORD=${{secrets.DEV_PASSWORD}} >> .env
-        # echo DEV_HOST=${{secrets.DEV_HOST}} >> .env
-        # echo DEV_DIALECT=${{secrets.DEV_DIALECT}} >> .env
-        # npx sequelize-cli db:migrate
+    # - name: "Setup Environmental variables and Migration Now"
+    #   run:  |
+    #     touch .env
+    #     # echo APP_PORT=${{secrets.APP_PORT}} >> .env
+    #     # echo DB_PORT=${{secrets.DB_PORT}} >> .env
+    #     # echo NODE_ENV=${{secrets.NODE_ENV}} >> .env
+    #     echo DEV_USERNAME=${{secrets.DEV_USERNAME}} >> .env
+    #     echo DEV_PASSWORD=${{secrets.DEV_PASSWORD}} >> .env
+    #     # echo DEV_HOST=${{secrets.DEV_HOST}} >> .env
+    #     # echo DEV_DIALECT=${{secrets.DEV_DIALECT}} >> .env
+    #     # npx sequelize-cli db:migrate
      
         
