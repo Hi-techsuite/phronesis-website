@@ -101,8 +101,37 @@
   align-items: center;
   position: relative;
   cursor: pointer;
-  margin-left: 1em;
+  padding: 5px 10px;
   user-select: none;
+  position: relative;
+}
+.header_div_area_cont2_link1:hover {
+  background: #f55b155e;
+  padding: 5px 10px;
+  border-radius: 38px;
+  color: #fff;
+}
+.header_div_area_cont2_link1_drop_div {
+  position: absolute;
+  top: 46px;
+  background: #000000c4;
+  width: max-content;
+  left: 0px;
+  backdrop-filter: blur(37px);
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  display: flex;
+  flex-direction: column;
+}
+.header_div_area_cont2_link1_drop_div_cont1 {
+  padding: 15px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.header_div_area_cont2_link1_drop_div_cont1:hover {
+  background: #fff;
+  color: #000;
 }
 .header_div_area_cont3_btn_contact {
   background: #f55b14;
@@ -250,6 +279,9 @@
 .mobile_wall_connct_div {
   display: none;
 }
+.mobile_menu_icon {
+  display: none !important;
+}
 @media (max-width: 999px) {
   .mobile_wall_connct_div {
     display: block;
@@ -301,7 +333,7 @@
     justify-content: flex-end;
   }
   .headerMenuDiv_cont {
-    background: #fff;
+    background: #000;
     width: 100%;
     padding: 2em 1em;
     display: flex;
@@ -316,7 +348,7 @@
     justify-content: space-between;
     padding: 15px 0px;
     width: 100%;
-    color: #000;
+    color: #fff;
   }
   .header_div_area_cont3_icon2 {
     display: block;
@@ -332,5 +364,24 @@
   }
   .header_div_area_cont3_login_mobile {
     display: block;
+  }
+  .mobile_menu_icon {
+    display: block !important;
+    cursor: pointer;
+    font-size: 28px !important;
+    border: solid 1px #dedede;
+    border-radius: 5px;
+  }
+  .header_div_area_cont3_btn_contact {
+    display: none;
+  }
+  .headerMenuDiv_cont_1_btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 13px;
+    border: none;
+    font-weight: 500;
+    background: #f55b14;
+    color: #fff;
   }
 }

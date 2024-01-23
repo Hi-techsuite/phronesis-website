@@ -8,16 +8,63 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
+import services from "../Static";
 const Header = ({ darkMode, togglemakeDark }) => {
   const [tradeDrop, setTradeDrop] = useState(false);
   const [headerMenu, setHeaderMenu] = useState(false);
 
-  const ToggleTradeDrop = () => {
-    setTradeDrop(!tradeDrop);
+  const OpenTradeDrop = () => {
+    setTradeDrop(true);
+  };
+  const CloseTradeDrop = () => {
+    setTradeDrop(false);
   };
   const ToggleHeaderMenu = () => {
     setHeaderMenu(!headerMenu);
   };
+
+  const serviceTitle = [
+    {
+      title: "ENVIRONMENTAL AND WASTE MANAGEMENT",
+    },
+    {
+      title: "ENHANCED SPENT TREATMENT",
+    },
+    {
+      title: " WASTE EQUIPMENT LEASING, SALE AND SUPPLY",
+    },
+    {
+      title: " WASTE TRANSPORTATION",
+    },
+    {
+      title: " EQUIPMENT LEASING PROCUREMENT",
+    },
+    {
+      title: "OIL & GAS DRILLING",
+    },
+    {
+      title: "FIELD MAINTENANCE",
+    },
+    {
+      title: "RENTAL OF DRILL CUTTINGS SKIPS",
+    },
+    {
+      title: "ENVIRONMENTAL CONSULTANCY",
+    },
+    {
+      title: "CIVIL & MECHANICAL ENGINEERING",
+    },
+    {
+      title: "ENGINEERING OVERVIEW",
+    },
+    {
+      title: "CONSTRUCTION & CIVIL WORKS",
+    },
+    {
+      title: "MECHANICAL FABRICATION",
+    },
+  ];
+
   return (
     <div className="header_div">
       <div className="container2">
@@ -32,30 +79,43 @@ const Header = ({ darkMode, togglemakeDark }) => {
 
           <div className="header_div_area_cont3">
             <div className="header_div_area_cont2">
-              <a href="#" className="header_div_area_cont2_link1">
+              <a href="/" className="header_div_area_cont2_link1">
                 Home
               </a>
-              <a href="#" className="header_div_area_cont2_link1">
-                Services
-              </a>
-              <a href="#" className="header_div_area_cont2_link1">
+              <div
+                className="header_div_area_cont2_link1"
+                onMouseOver={OpenTradeDrop}
+                // onMouseLeave={CloseTradeDrop}
+              >
+                Services{" "}
+                {tradeDrop ? (
+                  <div
+                    className="header_div_area_cont2_link1_drop_div"
+                    onMouseLeave={CloseTradeDrop}
+                  >
+                    {services.map((data) => (
+                      <a
+                        href={`/services/${data.id}/${data.title}`}
+                        className="header_div_area_cont2_link1_drop_div_cont1"
+                      >
+                        {data.title}
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+              <a href="/about" className="header_div_area_cont2_link1">
                 About Us
               </a>
               <a
-                href="https://docs.egox.io"
-                className="header_div_area_cont2_link1"
-                target="_blank"
-              >
-                Clients
-              </a>
-              <a
-                href="https://docs.egox.io"
+                href="/gallery"
                 className="header_div_area_cont2_link1"
                 target="_blank"
               >
                 Gallery
               </a>
             </div>
+            <MenuIcon className="mobile_menu_icon" onClick={ToggleHeaderMenu} />
             <button className="header_div_area_cont3_btn_contact">
               Contact Us
             </button>
@@ -69,71 +129,21 @@ const Header = ({ darkMode, togglemakeDark }) => {
               className="header_div_area_cont3_icon2"
               onClick={ToggleHeaderMenu}
             />
-            <a href="#" className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Trade</span>
-              <span className="headerMenuDiv_cont_1_icon">
+            {services.map((data) => (
+              <a
+                href={`/services/${data.id}/${data.title}`}
+                className="headerMenuDiv_cont_1"
+              >
                 {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
+                <span className="headerMenuDiv_cont_1_txt">{data.title}</span>
+                <span className="headerMenuDiv_cont_1_icon">
+                  {" "}
+                  <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
+                </span>
+              </a>
+            ))}
 
-            <a href="#" className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Earn</span>
-              <span className="headerMenuDiv_cont_1_icon">
-                {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
-            <a href="#" className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Borrow</span>
-              <span className="headerMenuDiv_cont_1_icon">
-                {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
-            <a
-              href="https://docs.egox.io"
-              target="_blank"
-              className="headerMenuDiv_cont_1"
-            >
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Docs</span>
-              <span className="headerMenuDiv_cont_1_icon">
-                {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
-            <div className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">UI-mode</span>
-              <span className="headerMenuDiv_cont_1_icon_btn">
-                {darkMode ? (
-                  <Brightness7Icon
-                    className="header_div_area_cont3_div2_icon"
-                    onClick={togglemakeDark}
-                  />
-                ) : (
-                  <NightsStayIcon
-                    className="header_div_area_cont3_div2_icon"
-                    onClick={togglemakeDark}
-                  />
-                )}
-              </span>
-            </div>
-            <div className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Language</span>
-              <span className="headerMenuDiv_cont_1_icon_btn">
-                <img
-                  src="/img/language_select_img1.svg"
-                  alt=""
-                  className="header_div_area_cont3_img"
-                />
-              </span>
-            </div>
+            <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
           </div>
         </div>
       ) : null}
