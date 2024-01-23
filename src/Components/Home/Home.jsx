@@ -6,13 +6,15 @@ import Marquee from "react-fast-marquee";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
+import services from "../Static";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/swiper-bundle.css";
 import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 const Home = () => {
+  const [activeSwipeIndex, setSwipeActiveIndex] = useState(0);
+
   var settings = {
     dots: true,
     infinite: false,
@@ -47,6 +49,14 @@ const Home = () => {
       },
     ],
   };
+  const handleSlideChange = (swiper) => {
+    console.log("Swiper slide index:", swiper.activeIndex);
+    setSwipeActiveIndex(swiper.activeIndex);
+    // Example condition based on the active index
+    if (swiper.activeIndex === 1) {
+      console.log("Swiper slide is equal to 1");
+    }
+  };
   return (
     <div className="home_div">
       <section className="home_div_section1">
@@ -63,6 +73,7 @@ const Home = () => {
             disableOnInteraction: false,
           }}
           modules={[EffectFade, Pagination, Autoplay]}
+          onSlideChange={handleSlideChange}
           className="home_div_section1_swiper"
         >
           <SwiperSlide className="dash_home_products_swiper_slide">
@@ -104,18 +115,56 @@ const Home = () => {
             <div className="home_div_section1_area_div">
               <div className="home_div_section1_area_div_area1">
                 <div className="home_div_section1_area_div_area1_txt1">
-                  ANSTON MARTIN PARTNERSHIP
+                  Phronesis
                 </div>
-                <div className="home_div_section1_area_div_area1_txt2">
-                  Protecting some of the favourite pitstops of Saudi Arabia’s
-                  migrating birds
-                </div>
-                <div className="home_div_section1_area_div_area1_button_div">
-                  Explore How{" "}
-                  <div className="home_div_section1_area_div_area1_button_div_icon_div">
-                    <ArrowForwardIcon className="home_div_section1_area_div_area1_button_div_icon" />
+                {activeSwipeIndex === 0 ? (
+                  <div className="home_div_section1_area_div_area1_txt2">
+                    ENVIROMENTAL AND WASTE MANAGEMENT
                   </div>
-                </div>
+                ) : null}
+                {activeSwipeIndex === 1 ? (
+                  <div className="home_div_section1_area_div_area1_txt2">
+                    Enhanced spent water base mud treatment
+                  </div>
+                ) : null}
+                {activeSwipeIndex === 2 ? (
+                  <div className="home_div_section1_area_div_area1_txt2">
+                    WASTE EQUIPMENT LEASING, SALE AND SUPPLY
+                  </div>
+                ) : null}
+                {activeSwipeIndex === 0 ? (
+                  <a
+                    href="/services/1/ENVIROMENTAL%20AND%20WASTE%20MANAGEMENT"
+                    className="home_div_section1_area_div_area1_button_div"
+                  >
+                    Explore{" "}
+                    <div className="home_div_section1_area_div_area1_button_div_icon_div">
+                      <ArrowForwardIcon className="home_div_section1_area_div_area1_button_div_icon" />
+                    </div>
+                  </a>
+                ) : null}
+                {activeSwipeIndex === 1 ? (
+                  <a
+                    href="/services/2/Enhanced%20spent%20water%20base%20mud%20treatment"
+                    className="home_div_section1_area_div_area1_button_div"
+                  >
+                    Explore{" "}
+                    <div className="home_div_section1_area_div_area1_button_div_icon_div">
+                      <ArrowForwardIcon className="home_div_section1_area_div_area1_button_div_icon" />
+                    </div>
+                  </a>
+                ) : null}
+                {activeSwipeIndex === 2 ? (
+                  <a
+                    href="/services/3/WASTE%20EQUIPMENT%20LEASING,%20SALE%20AND%20SUPPLY"
+                    className="home_div_section1_area_div_area1_button_div"
+                  >
+                    Explore{" "}
+                    <div className="home_div_section1_area_div_area1_button_div_icon_div">
+                      <ArrowForwardIcon className="home_div_section1_area_div_area1_button_div_icon" />
+                    </div>
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>
@@ -127,7 +176,7 @@ const Home = () => {
       {/* ==================== */}
       {/* ==================== */}
       {/* ==================== */}
-      <div className="feautured_in_div">
+      <div className="feautured_in_div" id="clients">
         <div className="feautured_in_div_title">Featured In</div>
         <Marquee
           speed={80}
@@ -222,10 +271,10 @@ const Home = () => {
                 efficient, cost-effective, and environmentally sound solutions
                 to hazardous waste management and oil and gas drilling problems.
               </div>
-              <div className="home_div_section3_area_2_cont1_btn">
+              <a href="/about" className="home_div_section3_area_2_cont1_btn">
                 <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
                 Read more
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -250,125 +299,26 @@ const Home = () => {
 
             <div className="home_div_section3_area_2">
               <Slider {...settings} className="services_slider">
-                <div className="home_div_section3_area_2_cont1">
-                  <img
-                    src="/img/climate_img.webp"
-                    alt=""
-                    className="home_div_section3_area_2_cont1_img"
-                  />
-                  <div className="home_div_section3_area_2_cont1_title">
-                    Climate change
+                {services.map((data) => (
+                  <div className="home_div_section3_area_2_cont1" id={data.id}>
+                    <div className="home_div_section3_area_2_cont1_img_div">
+                      <img
+                        src="/img/climate_img.webp"
+                        alt=""
+                        className="home_div_section3_area_2_cont1_img"
+                      />
+                    </div>
+                    <div className="home_div_section3_area_2_cont1_title">
+                      {data.title}
+                    </div>
+                    <a href={`/services/${data.id}/${data.title}`}>
+                      <div className="home_div_section3_area_2_cont1_btn">
+                        <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
+                        Read more
+                      </div>
+                    </a>
                   </div>
-                  <div className="home_div_section3_area_2_cont1_para">
-                    Reducing emissions to help address climate change.
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_btn">
-                    <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
-                    Read more
-                  </div>
-                </div>
-                <div className="home_div_section3_area_2_cont1">
-                  <img
-                    src="/img/climate_img.webp"
-                    alt=""
-                    className="home_div_section3_area_2_cont1_img"
-                  />
-                  <div className="home_div_section3_area_2_cont1_title">
-                    Climate change
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_para">
-                    Reducing emissions to help address climate change.
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_btn">
-                    <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
-                    Read more
-                  </div>
-                </div>
-                <div className="home_div_section3_area_2_cont1">
-                  <img
-                    src="/img/climate_img.webp"
-                    alt=""
-                    className="home_div_section3_area_2_cont1_img"
-                  />
-                  <div className="home_div_section3_area_2_cont1_title">
-                    Climate change
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_para">
-                    Reducing emissions to help address climate change.
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_btn">
-                    <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
-                    Read more
-                  </div>
-                </div>
-                <div className="home_div_section3_area_2_cont1">
-                  <img
-                    src="/img/climate_img.webp"
-                    alt=""
-                    className="home_div_section3_area_2_cont1_img"
-                  />
-                  <div className="home_div_section3_area_2_cont1_title">
-                    Climate change
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_para">
-                    Reducing emissions to help address climate change.
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_btn">
-                    <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
-                    Read more
-                  </div>
-                </div>
-                <div className="home_div_section3_area_2_cont1">
-                  <img
-                    src="/img/climate_img.webp"
-                    alt=""
-                    className="home_div_section3_area_2_cont1_img"
-                  />
-                  <div className="home_div_section3_area_2_cont1_title">
-                    Climate change
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_para">
-                    Reducing emissions to help address climate change.
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_btn">
-                    <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
-                    Read more
-                  </div>
-                </div>
-                <div className="home_div_section3_area_2_cont1">
-                  <img
-                    src="/img/climate_img.webp"
-                    alt=""
-                    className="home_div_section3_area_2_cont1_img"
-                  />
-                  <div className="home_div_section3_area_2_cont1_title">
-                    Climate change
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_para">
-                    Reducing emissions to help address climate change.
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_btn">
-                    <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
-                    Read more
-                  </div>
-                </div>
-                <div className="home_div_section3_area_2_cont1">
-                  <img
-                    src="/img/climate_img.webp"
-                    alt=""
-                    className="home_div_section3_area_2_cont1_img"
-                  />
-                  <div className="home_div_section3_area_2_cont1_title">
-                    Climate change
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_para">
-                    Reducing emissions to help address climate change.
-                  </div>
-                  <div className="home_div_section3_area_2_cont1_btn">
-                    <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
-                    Read more
-                  </div>
-                </div>
+                ))}
               </Slider>
             </div>
           </div>
@@ -385,11 +335,15 @@ const Home = () => {
           <div className="home_div_section4_area">
             <div className="home_div_section4_area_cont1">
               Gallery{" "}
-              <div className="home_div_section4_area_cont1_btn">
+              <a
+                href="/gallery"
+                className="home_div_section4_area_cont1_btn"
+                style={{ color: "#000" }}
+              >
                 {" "}
                 <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
                 See more
-              </div>
+              </a>
             </div>
             <div className="home_div_section4_area_cont2">
               <div className="home_div_section4_area_cont2_cont1">
