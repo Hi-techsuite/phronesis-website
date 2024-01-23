@@ -93,9 +93,9 @@ const Header = ({ darkMode, togglemakeDark }) => {
                     className="header_div_area_cont2_link1_drop_div"
                     onMouseLeave={CloseTradeDrop}
                   >
-                    {serviceTitle.map((data) => (
+                    {services.map((data) => (
                       <a
-                        href="#"
+                        href={`/services/${data.id}/${data.title}`}
                         className="header_div_area_cont2_link1_drop_div_cont1"
                       >
                         {data.title}
@@ -129,71 +129,21 @@ const Header = ({ darkMode, togglemakeDark }) => {
               className="header_div_area_cont3_icon2"
               onClick={ToggleHeaderMenu}
             />
-            <a href="#" className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Trade</span>
-              <span className="headerMenuDiv_cont_1_icon">
+            {services.map((data) => (
+              <a
+                href={`/services/${data.id}/${data.title}`}
+                className="headerMenuDiv_cont_1"
+              >
                 {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
+                <span className="headerMenuDiv_cont_1_txt">{data.title}</span>
+                <span className="headerMenuDiv_cont_1_icon">
+                  {" "}
+                  <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
+                </span>
+              </a>
+            ))}
 
-            <a href="#" className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Earn</span>
-              <span className="headerMenuDiv_cont_1_icon">
-                {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
-            <a href="#" className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Borrow</span>
-              <span className="headerMenuDiv_cont_1_icon">
-                {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
-            <a
-              href="https://docs.egox.io"
-              target="_blank"
-              className="headerMenuDiv_cont_1"
-            >
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Docs</span>
-              <span className="headerMenuDiv_cont_1_icon">
-                {" "}
-                <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-              </span>
-            </a>
-            <div className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">UI-mode</span>
-              <span className="headerMenuDiv_cont_1_icon_btn">
-                {darkMode ? (
-                  <Brightness7Icon
-                    className="header_div_area_cont3_div2_icon"
-                    onClick={togglemakeDark}
-                  />
-                ) : (
-                  <NightsStayIcon
-                    className="header_div_area_cont3_div2_icon"
-                    onClick={togglemakeDark}
-                  />
-                )}
-              </span>
-            </div>
-            <div className="headerMenuDiv_cont_1">
-              {" "}
-              <span className="headerMenuDiv_cont_1_txt">Language</span>
-              <span className="headerMenuDiv_cont_1_icon_btn">
-                <img
-                  src="/img/language_select_img1.svg"
-                  alt=""
-                  className="header_div_area_cont3_img"
-                />
-              </span>
-            </div>
+            <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
           </div>
         </div>
       ) : null}
