@@ -91,7 +91,9 @@ button:focus {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.slick-dots {
+  bottom: -40px !important;
+}
 @media (max-width: 999px) {
   .container {
     max-width: 720px;
