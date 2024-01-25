@@ -4,6 +4,10 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Slider from "react-slick";
 import services from "../../Static";
 import { useNavigate, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { transition } from "../../../utils/transition";
+import { fadeIn, reveal } from "../../../utils/variants";
+
 const ServicePage = () => {
   const [payload, setPayload] = useState(null);
   const { id, title } = useParams();
@@ -83,11 +87,20 @@ const ServicePage = () => {
                   <div className="home_div_section1_area_div">
                     <div className="home_div_section1_area_div_area1">
                       <div className="home_div_section1_area_div_area1_txt1">
-                        Phronesis
+                        Phronesis Service
                       </div>
-                      <div className="home_div_section1_area_div_area1_txt2b">
+
+                      <motion.div
+                        variants={fadeIn("Up")}
+                        transition={transition()}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: false }}
+                        className="home_div_section1_area_div_area1_txt2b"
+                      >
                         {payload.title}
-                      </div>
+                      </motion.div>
+
                       <div className="home_div_section1_area_div_area1_button_div">
                         <div className="home_div_section1_area_div_area1_button_div_icon_div">
                           <ArrowForwardIcon className="home_div_section1_area_div_area1_button_div_icon" />
@@ -100,7 +113,17 @@ const ServicePage = () => {
             </div>
           </section>
           <section className="ServicePage2">
-            <div className="container2">{payload.body}</div>
+            <div className="container2">
+              <motion.div
+                variants={fadeIn("Up")}
+                transition={transition()}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+              >
+                {payload.body}
+              </motion.div>
+            </div>
           </section>
           <section className="home_div_section3">
             <div className="container2">
@@ -115,11 +138,18 @@ const ServicePage = () => {
                     protecting the planet we all inhabit.
                   </div>
                 </div>
-
-                <div className="home_div_section3_area_2">
+                <motion.div
+                  variants={fadeIn("Up")}
+                  transition={transition()}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false }}
+                  className="home_div_section3_area_2"
+                >
                   <Slider {...settings} className="services_slider">
                     {services.map((data) => (
-                      <div
+                      <a
+                        href={`/services/${data.id}/${data.title}`}
                         className="home_div_section3_area_2_cont1"
                         id={data.id}
                       >
@@ -139,10 +169,10 @@ const ServicePage = () => {
                             Read more
                           </div>
                         </a>
-                      </div>
+                      </a>
                     ))}
                   </Slider>
-                </div>
+                </motion.div>
               </div>
             </div>
           </section>

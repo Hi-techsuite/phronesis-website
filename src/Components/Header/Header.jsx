@@ -7,8 +7,14 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import SettingsIcon from "@mui/icons-material/Settings";
 import services from "../Static";
+import NorthEastIcon from "@mui/icons-material/NorthEast";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/variants";
+import { transition, transition2 } from "../../utils/transition";
+
 const Header = ({ darkMode, togglemakeDark }) => {
   const [tradeDrop, setTradeDrop] = useState(false);
   const [headerMenu, setHeaderMenu] = useState(false);
@@ -66,7 +72,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
   ];
 
   return (
-    <div className="header_div">
+    <div className="header_div" onMouseLeave={CloseTradeDrop}>
       <div className="container2">
         <div className="header_div_area">
           <a href="/" className="header_div_area_cont1">
@@ -79,7 +85,11 @@ const Header = ({ darkMode, togglemakeDark }) => {
 
           <div className="header_div_area_cont3">
             <div className="header_div_area_cont2">
-              <a href="/" className="header_div_area_cont2_link1">
+              <a
+                href="/"
+                className="header_div_area_cont2_link1"
+                onMouseOver={CloseTradeDrop}
+              >
                 Home
               </a>
               <div
@@ -87,9 +97,14 @@ const Header = ({ darkMode, togglemakeDark }) => {
                 onMouseOver={OpenTradeDrop}
                 // onMouseLeave={CloseTradeDrop}
               >
-                Services{" "}
+                Services <ExpandMoreIcon />{" "}
                 {tradeDrop ? (
-                  <div
+                  <motion.div
+                    variants={fadeIn("down")}
+                    transition={transition2()}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
                     className="header_div_area_cont2_link1_drop_div"
                     onMouseLeave={CloseTradeDrop}
                   >
@@ -98,27 +113,43 @@ const Header = ({ darkMode, togglemakeDark }) => {
                         href={`/services/${data.id}/${data.title}`}
                         className="header_div_area_cont2_link1_drop_div_cont1"
                       >
-                        {data.title}
+                        <div className="header_div_area_cont2_link1_drop_div_cont1_div">
+                          <SettingsIcon className="header_div_area_cont2_link1_drop_div_cont1_icon" />{" "}
+                          {data.title}
+                        </div>
+                        {/* <NorthEastIcon className="header_div_area_cont2_link1_drop_div_cont1_arrow" /> */}
                       </a>
                     ))}
-                  </div>
+                  </motion.div>
                 ) : null}
               </div>
-              <a href="/about" className="header_div_area_cont2_link1">
+
+              <a
+                href="/about"
+                className="header_div_area_cont2_link1"
+                onMouseOver={CloseTradeDrop}
+              >
                 About Us
               </a>
               <a
                 href="/gallery"
                 className="header_div_area_cont2_link1"
                 target="_blank"
+                onMouseOver={CloseTradeDrop}
               >
                 Gallery
               </a>
             </div>
-            <MenuIcon className="mobile_menu_icon" onClick={ToggleHeaderMenu} />
-            <button className="header_div_area_cont3_btn_contact">
-              Contact Us
-            </button>
+            <MenuIcon
+              className="mobile_menu_icon2"
+              onClick={ToggleHeaderMenu}
+              onMouseOver={CloseTradeDrop}
+            />
+            <a href="/#contact">
+              <button className="header_div_area_cont3_btn_contact">
+                Contact Us
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -135,15 +166,19 @@ const Header = ({ darkMode, togglemakeDark }) => {
                 className="headerMenuDiv_cont_1"
               >
                 {" "}
-                <span className="headerMenuDiv_cont_1_txt">{data.title}</span>
+                <div className="header_div_area_cont2_link1_drop_div_cont1_div">
+                  <SettingsIcon className="header_div_area_cont2_link1_drop_div_cont1_icon" />{" "}
+                  <span className="headerMenuDiv_cont_1_txt">{data.title}</span>
+                </div>
                 <span className="headerMenuDiv_cont_1_icon">
                   {" "}
                   <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
                 </span>
               </a>
             ))}
-
-            <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
+            <a href="/#contact" style={{ width: "100%" }}>
+              <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
+            </a>
           </div>
         </div>
       ) : null}

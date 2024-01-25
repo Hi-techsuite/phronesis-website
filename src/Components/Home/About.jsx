@@ -1,6 +1,8 @@
 import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
+import { motion } from "framer-motion";
+import { transition } from "../../utils/transition";
+import { fadeIn, reveal } from "../../utils/variants";
 const About = () => {
   return (
     <div className="servicePageDiv">
@@ -21,9 +23,17 @@ const About = () => {
                   <div className="home_div_section1_area_div_area1_txt1">
                     Phronesis
                   </div>
-                  <div className="home_div_section1_area_div_area1_txt2b">
+                  <motion.div
+                    variants={fadeIn("Up")}
+                    transition={transition()}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                    className="home_div_section1_area_div_area1_txt2b_abt"
+                  >
                     About Us
-                  </div>
+                  </motion.div>
+
                   <div className="home_div_section1_area_div_area1_button_div">
                     <div className="home_div_section1_area_div_area1_button_div_icon_div">
                       <ArrowForwardIcon className="home_div_section1_area_div_area1_button_div_icon" />
@@ -37,7 +47,14 @@ const About = () => {
       </section>
       <section className="mission_section">
         <div className="container2">
-          <div className="mission_section_area">
+          <motion.div
+            variants={fadeIn("Up")}
+            transition={transition()}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false }}
+            className="mission_section_area"
+          >
             <div className="home_div_section3_area_body_cont1">
               <div className="home_div_section3_area_body_cont1_title">
                 Vision
@@ -262,12 +279,19 @@ const About = () => {
                 </svg>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="ServicePage2">
         <div className="container2">
-          <div className="ServicePage2_area">
+          <motion.div
+            variants={fadeIn("Up")}
+            transition={transition()}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false }}
+            className="ServicePage2_area"
+          >
             <div className="ServicePage2_area_cont">
               <span>PHRONESIS OIL & GAS TEK LIMITED</span> is a full service
               hazardous and non–hazardous waste transportation, management,
@@ -322,7 +346,7 @@ const About = () => {
               task lightly. It is the focus of the company’s goal for continuous
               improvement.
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
