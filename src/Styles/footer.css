@@ -1,6 +1,8 @@
 .footer_div {
   position: relative;
   padding: 4em 0em;
+  background: #000;
+  color: #fff;
 }
 .footer_div_area {
   display: flex;
@@ -34,12 +36,12 @@
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 300;
-  color: #222222;
+  color: #d0d0d0;
 }
 .footer_hr {
   width: 100%;
   margin: 1em 0em;
-  border: solid 0.5px #e6e6e6;
+  border: solid 0.5px #444444;
 }
 .footer_lastDiv {
   width: 100%;

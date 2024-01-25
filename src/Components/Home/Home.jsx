@@ -4,6 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Marquee from "react-fast-marquee";
 import "slick-carousel/slick/slick.css";
+import { motion } from "framer-motion";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import services from "../Static";
@@ -12,8 +13,14 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/swiper-bundle.css";
 import { Pagination, EffectFade, Autoplay } from "swiper/modules";
+import { transition } from "../../utils/transition";
+import { fadeIn, reveal } from "../../utils/variants";
+
 const Home = () => {
   const [activeSwipeIndex, setSwipeActiveIndex] = useState(0);
+  const [imgPop, setImgPop] = useState("");
+  const [imgContent, setImgContent] = useState("");
+  const [expandDiv, setExpandDiv] = useState("");
 
   var settings = {
     dots: true,
@@ -56,6 +63,25 @@ const Home = () => {
     if (swiper.activeIndex === 1) {
       console.log("Swiper slide is equal to 1");
     }
+  };
+  const textArray = ["gallery_img1", "gallery_img2", "gallery_img3"];
+
+  const toggleImgPop = (e) => {
+    setImgPop(e.currentTarget.id);
+    setImgContent(`/img/${e.currentTarget.id}.jpeg`);
+    console.log("====================================");
+    console.log(e.currentTarget.id);
+    console.log("====================================");
+  };
+  const closeImgPop = () => {
+    setImgPop("");
+    setImgContent("");
+  };
+  const OpenExpandDiv = (e) => {
+    setExpandDiv(e.currentTarget.id);
+  };
+  const CloseExpandDiv = () => {
+    setExpandDiv("");
   };
   return (
     <div className="home_div">
@@ -115,22 +141,46 @@ const Home = () => {
             <div className="home_div_section1_area_div">
               <div className="home_div_section1_area_div_area1">
                 <div className="home_div_section1_area_div_area1_txt1">
-                  Phronesis
+                  Phronesis Services
                 </div>
                 {activeSwipeIndex === 0 ? (
-                  <div className="home_div_section1_area_div_area1_txt2">
-                    ENVIROMENTAL AND WASTE MANAGEMENT
-                  </div>
+                  <motion.div
+                    variants={fadeIn("Up")}
+                    transition={transition()}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                  >
+                    <div className="home_div_section1_area_div_area1_txt2">
+                      Environmental And Waste <span> Management </span>{" "}
+                    </div>
+                  </motion.div>
                 ) : null}
                 {activeSwipeIndex === 1 ? (
-                  <div className="home_div_section1_area_div_area1_txt2">
-                    Enhanced spent water base mud treatment
-                  </div>
+                  <motion.div
+                    variants={fadeIn("Up")}
+                    transition={transition()}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                  >
+                    <div className="home_div_section1_area_div_area1_txt2">
+                      Enhanced spent water base mud <span> treatment </span>
+                    </div>
+                  </motion.div>
                 ) : null}
                 {activeSwipeIndex === 2 ? (
-                  <div className="home_div_section1_area_div_area1_txt2">
-                    WASTE EQUIPMENT LEASING, SALE AND SUPPLY
-                  </div>
+                  <motion.div
+                    variants={fadeIn("Up")}
+                    transition={transition()}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                  >
+                    <div className="home_div_section1_area_div_area1_txt2">
+                      Waste Equipment Leasing, <span> Sale And Supply </span>
+                    </div>
+                  </motion.div>
                 ) : null}
                 {activeSwipeIndex === 0 ? (
                   <a
@@ -177,7 +227,7 @@ const Home = () => {
       {/* ==================== */}
       {/* ==================== */}
       <div className="feautured_in_div" id="clients">
-        <div className="feautured_in_div_title">Featured In</div>
+        <div className="feautured_in_div_title">Clients</div>
         <Marquee
           speed={80}
           gradient={false}
@@ -246,13 +296,21 @@ const Home = () => {
       <section className="home_div_section2">
         <div className="container2">
           <div className="home_div_section2_area">
-            <div className="home_div_section2_area_1">
+            <motion.div
+              variants={fadeIn("Up")}
+              transition={transition()}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              className="home_div_section2_area_1"
+            >
               <img
                 src="/img/about_img.webp"
                 alt=""
                 className="home_div_section2_area_1_img"
               />
-            </div>
+            </motion.div>
+
             <div className="home_div_section2_area_2">
               <div className="home_div_section2_area_2_title">About Us</div>
               <div className="home_div_section2_area_2_para">
@@ -296,11 +354,21 @@ const Home = () => {
                 the planet we all inhabit.
               </div>
             </div>
-
-            <div className="home_div_section3_area_2">
+            <motion.div
+              variants={fadeIn("Up")}
+              transition={transition()}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              className="home_div_section3_area_2"
+            >
               <Slider {...settings} className="services_slider">
                 {services.map((data) => (
-                  <div className="home_div_section3_area_2_cont1" id={data.id}>
+                  <a
+                    href={`/services/${data.id}/${data.title}`}
+                    className="home_div_section3_area_2_cont1"
+                    id={data.id}
+                  >
                     <div className="home_div_section3_area_2_cont1_img_div">
                       <img
                         src="/img/climate_img.webp"
@@ -317,10 +385,10 @@ const Home = () => {
                         Read more
                       </div>
                     </a>
-                  </div>
+                  </a>
                 ))}
               </Slider>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -338,34 +406,84 @@ const Home = () => {
               <a
                 href="/gallery"
                 className="home_div_section4_area_cont1_btn"
-                style={{ color: "#000" }}
+                style={{ color: "#1f8759" }}
               >
                 {" "}
                 <ArrowForwardIcon className="home_div_section3_area_2_cont1_btn_icon" />{" "}
                 See more
               </a>
             </div>
-            <div className="home_div_section4_area_cont2">
-              <div className="home_div_section4_area_cont2_cont1">
+            <motion.div
+              variants={fadeIn("Up")}
+              transition={transition()}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              className="home_div_section4_area_cont2"
+            >
+              <div
+                className="home_div_section4_area_cont2_cont1"
+                id="gallery_img2"
+                onClick={toggleImgPop}
+                onMouseOver={OpenExpandDiv}
+                onMouseLeave={CloseExpandDiv}
+              >
                 <img
                   src="/img/gallery_img2.jpeg"
                   alt=""
                   className="home_div_section4_area_cont2_cont1_img"
                 />
+                {expandDiv === "gallery_img2" ? (
+                  <div className="Expandiv_div">
+                    <div className="Expandiv_div_txt">
+                      Click image to expand
+                    </div>
+                  </div>
+                ) : null}
               </div>
               <div className="home_div_section4_area_cont2_cont2">
-                <img
-                  src="/img/gallery_img1.jpeg"
-                  alt=""
-                  className="home_div_section4_area_cont2_cont2_img"
-                />
-                <img
-                  src="/img/gallery_img3.jpeg"
-                  alt=""
-                  className="home_div_section4_area_cont2_cont2_img"
-                />
+                <div
+                  id="gallery_img1"
+                  className="home_div_section4_area_cont2_cont2_div"
+                  onClick={toggleImgPop}
+                  onMouseOver={OpenExpandDiv}
+                  onMouseLeave={CloseExpandDiv}
+                >
+                  <img
+                    src="/img/gallery_img1.jpeg"
+                    alt=""
+                    className="home_div_section4_area_cont2_cont2_img"
+                  />
+                  {expandDiv === "gallery_img1" ? (
+                    <div className="Expandiv_div">
+                      <div className="Expandiv_div_txt">
+                        Click image to expand
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+                <div
+                  id="gallery_img3"
+                  className="home_div_section4_area_cont2_cont2_div"
+                  onClick={toggleImgPop}
+                  onMouseOver={OpenExpandDiv}
+                  onMouseLeave={CloseExpandDiv}
+                >
+                  <img
+                    src="/img/gallery_img3.jpeg"
+                    alt=""
+                    className="home_div_section4_area_cont2_cont2_img"
+                  />
+                  {expandDiv === "gallery_img3" ? (
+                    <div className="Expandiv_div">
+                      <div className="Expandiv_div_txt">
+                        Click image to expand
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -378,13 +496,14 @@ const Home = () => {
       <section
         className="home_div_section5"
         style={{ backgroundImage: "url(/img/contact_dummy_img.webp)" }}
+        id="contact"
       >
         <div className="home_div_section1_fade_bg_img2"></div>
         <div className="container2">
           <div className="home_div_section5_area">
             <div className="home_div_section5_area_1">
               <div className="home_div_section5_area_1_div1">
-                Do you have any questions?
+                Do you have any <span> questions?</span>
               </div>
               <div className="home_div_section5_area_1_div2">
                 Feel free to use the form to get in touch with us or visit our
@@ -441,6 +560,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {textArray.includes(imgPop) ? (
+        <div className="img_popUp" onClick={closeImgPop}>
+          {/* <div className="img_popUp_close_div"></div> */}
+          <img src={imgContent} alt="" className="img_popUp_img" />
+        </div>
+      ) : null}
     </div>
   );
 };

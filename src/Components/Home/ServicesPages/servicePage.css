@@ -4,7 +4,7 @@
 .ServicePage1 {
   position: relative;
   padding: 6em 0em;
-  background: #ececec;
+  background: #fff;
   padding-top: 10em;
 }
 .home_div_section1_areab {
@@ -34,15 +34,16 @@
 .ServicePage2 {
   position: relative;
   padding: 6em 0em;
-  background: #ffffff;
+  padding-bottom: 0em;
+  background: #fff8f6;
 }
 .ServicePage2_area {
   display: flex;
   flex-direction: column;
 }
 .ServicePage2_area_cont {
-  color: #000000;
-  font-size: 24px;
+  color: #615755;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 2em;
@@ -57,9 +58,17 @@
   }
   .ServicePage1 {
     padding: 3em 0em;
-    padding-top: 8em;
+    padding-top: 6em;
   }
   .home_div_section1_areab {
-    padding: 0em 2em;
+    padding: 0em 1em;
+  }
+  .ServicePage2 {
+    padding: 2em 0em;
+    padding-bottom: 0em;
+  }
+  .ServicePage2_area_cont {
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 }
