@@ -7,12 +7,14 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import ServicePage from "./Components/Home/ServicesPages/ServicePage";
 import Gallery from "./Components/Home/Gallery";
 import About from "./Components/Home/About";
+import NewHome from "./Components/Home/NewHome/NewHome";
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<NewHome />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/services/:id/:title" element={<ServicePage />} />

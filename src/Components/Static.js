@@ -1,7 +1,11 @@
 const services = [
   {
     id: "1",
+    img: "/img/service_bg1.jpg",
     title: "ENVIROMENTAL AND WASTE MANAGEMENT",
+    title2: "Environmental and waste management",
+    paragraph:
+      "PHRONESIS OIL & GAS TEK LIMITED, within the period of her existence, has provided environmental and waste management solutions...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -54,7 +58,11 @@ const services = [
   },
   {
     id: "2",
+    img: "/img/service_bg2.jpeg",
     title: "Enhanced spent water base mud treatment",
+    title2: "Enhanced spent water base mud treatment",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -93,7 +101,11 @@ const services = [
   },
   {
     id: "3",
+    img: "/img/service_bg3.jpeg",
     title: "WASTE EQUIPMENT LEASING, SALE AND SUPPLY",
+    title2: "Waste equipment leasing, sale and supply",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -118,7 +130,11 @@ const services = [
   },
   {
     id: "4",
+    img: "/img/service_bg4.jpeg",
     title: "WASTE TRANSPORTATION DISPOSAL",
+    title2: "Waste transortation disposal",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -177,12 +193,20 @@ const services = [
   },
   {
     id: "5",
+    img: "/img/service_bg5.jpeg",
     title: "EQUIPMENT LEASING, SALES & PROCUREMENT",
+    title2: "Equipment leasing, sales & procurement",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: <></>,
   },
   {
     id: "6",
+    img: "/img/service_bg6.webp",
     title: "COMPLETE OIL & GAS DRILLING & LOGISTICS",
+    title2: "Complete oil & gas drilling & logistics",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -241,7 +265,11 @@ const services = [
   },
   {
     id: "7",
+    img: "/img/service_bg7.jpeg",
     title: "FIELD MAINTENANCE CONSTRUCTION MODIFICATION REPAIR",
+    title2: "Field maintenance construction modification repair",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -271,7 +299,11 @@ const services = [
   },
   {
     id: "8",
+    img: "/img/service_bg8.jpeg",
     title: "RENTAL HAULAGE OF DRILL CUTTINGS SKIPS",
+    title2: "Rental haulage of drill cuttings skips",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -287,7 +319,11 @@ const services = [
   },
   {
     id: "9",
+    img: "/img/service_bg9.jpeg",
     title: "ENVIRONMENTAL CONSULTANCY",
+    title2: "Environmental consultancy",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -317,7 +353,11 @@ const services = [
   },
   {
     id: "10",
+    img: "/img/service_bg10.webp",
     title: "ENGINEERING OVERVIEW",
+    title2: "Engineering overview",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -342,7 +382,11 @@ const services = [
   },
   {
     id: "11",
+    img: "/img/service_bg11.jpeg",
     title: "CONSTRUCTION SERVICES AND CIVIL WORKS",
+    title2: "Construction services and civil works",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">
@@ -390,7 +434,11 @@ const services = [
   },
   {
     id: "12",
+    img: "/img/service_bg12.jpeg",
     title: "MECHANICAL FABRICATION",
+    title2: "Mechanical fabrication",
+    paragraph:
+      "Having worked successfully with Waste management teams in various Oil and Gas companies...",
     body: (
       <div className="ServicePage2_area">
         <div className="ServicePage2_area_cont">

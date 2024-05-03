@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="footer_div_area_1_cont1">
               {" "}
               <img
-                src="/phronesis_logo.svg"
+                src="/phronesis_logo_light.svg"
                 alt=""
                 className="header_div_area_cont1_img"
               />

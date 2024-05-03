@@ -145,7 +145,7 @@ const Home = () => {
                 </div>
                 {activeSwipeIndex === 0 ? (
                   <motion.div
-                    variants={fadeIn("Up")}
+                    variants={reveal()}
                     transition={transition()}
                     initial="hidden"
                     whileInView="visible"
@@ -158,7 +158,7 @@ const Home = () => {
                 ) : null}
                 {activeSwipeIndex === 1 ? (
                   <motion.div
-                    variants={fadeIn("Up")}
+                    variants={reveal()}
                     transition={transition()}
                     initial="hidden"
                     whileInView="visible"
@@ -167,11 +167,12 @@ const Home = () => {
                     <div className="home_div_section1_area_div_area1_txt2">
                       Enhanced spent water base mud <span> treatment </span>
                     </div>
+                    <div className="home_div_section1_area_div_area1_txt2_para"></div>
                   </motion.div>
                 ) : null}
                 {activeSwipeIndex === 2 ? (
                   <motion.div
-                    variants={fadeIn("Up")}
+                    variants={reveal()}
                     transition={transition()}
                     initial="hidden"
                     whileInView="visible"
@@ -305,7 +306,7 @@ const Home = () => {
               className="home_div_section2_area_1"
             >
               <img
-                src="/img/about_img.webp"
+                src="/img/about_img_img.jpeg"
                 alt=""
                 className="home_div_section2_area_1_img"
               />
