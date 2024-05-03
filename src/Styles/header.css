@@ -2,10 +2,22 @@
   position: fixed;
   width: 100vw;
   top: 0;
-  background: #000000;
+  /* background: #f0fff424; */
+  /* border-bottom: solid 1px #ffffff17; */
+  z-index: 100;
+  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(2px); */
+  color: #fff;
+}
+.header_div_fixed {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background: #000000b8;
   border-bottom: solid 1px #ffffff17;
   z-index: 100;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   color: #fff;
 }
 .header_div_area {
@@ -94,7 +106,7 @@
 }
 .header_div_area_cont2_link1 {
   margin: 0em;
-  color: #d0d0d0;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   display: flex;
@@ -107,7 +119,7 @@
   transition: all 0.3s linear;
 }
 .header_div_area_cont2_link1:hover {
-  background: #e9360e;
+  background: #2b9768;
   padding: 5px 15px;
   border-radius: 38px;
   color: #fff;
@@ -146,7 +158,7 @@
 .header_div_area_cont2_link1_drop_div_cont1_icon {
   font-size: 18px !important;
   margin-right: 5px;
-  color: #e9360e;
+  color: #2b9768;
 }
 .header_div_area_cont2_link1_drop_div_cont1_div {
   display: flex;
@@ -159,7 +171,7 @@
   transition: all 0.1s linear;
 }
 .header_div_area_cont3_btn_contact {
-  background: #e9360e;
+  background: #2b9768;
   color: #fff;
   padding: 12px 15px;
   width: 150px;
@@ -199,7 +211,7 @@
 }
 .header_div_area_cont3_div3_btn {
   background: #ffebe4;
-  color: #ed5221;
+  color: #2b9768;
   font-size: 14px;
   padding: 12px;
   width: 170px;
@@ -262,7 +274,7 @@
   max-width: max-content;
   margin-right: 10px;
   cursor: pointer;
-  border: solid 1px #fe5623;
+  border: solid 1px #2b9768;
 }
 .header_div_area_cont3_div3_area_eusd_bal_div_img {
   width: 20px;
@@ -291,7 +303,7 @@
 }
 .header_div_area_cont3_div3_area_chain_wallet_bal_div_address {
   padding: 5px 10px;
-  background: #fe5623;
+  background: #2b9768;
   border-radius: 30px;
   color: #fff;
 }
@@ -416,7 +428,7 @@
     border-radius: 13px;
     border: none;
     font-weight: 500;
-    background: #e9360e;
+    background: #2b9768;
     color: #fff;
   }
 }

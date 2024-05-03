@@ -18,6 +18,7 @@ import { transition, transition2 } from "../../utils/transition";
 const Header = ({ darkMode, togglemakeDark }) => {
   const [tradeDrop, setTradeDrop] = useState(false);
   const [headerMenu, setHeaderMenu] = useState(false);
+  const [fixed, setFixed] = useState(false);
 
   const OpenTradeDrop = () => {
     setTradeDrop(true);
@@ -71,8 +72,21 @@ const Header = ({ darkMode, togglemakeDark }) => {
     },
   ];
 
+  const handleScroll = () => {
+    if (window.scrollY >= 100) {
+      setFixed(true);
+    } else {
+      setFixed(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
-    <div className="header_div" onMouseLeave={CloseTradeDrop}>
+    <div
+      className={fixed ? "header_div_fixed" : "header_div"}
+      onMouseLeave={CloseTradeDrop}
+    >
       <div className="container2">
         <div className="header_div_area">
           <a href="/" className="header_div_area_cont1">
