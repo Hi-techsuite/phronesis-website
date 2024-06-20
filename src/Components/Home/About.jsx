@@ -6,7 +6,7 @@ import { fadeIn, reveal } from "../../utils/variants";
 const About = () => {
   return (
     <div className="servicePageDiv">
-      <section className="ServicePage1">
+      <section className="relative bg-[#1D2723] lg:py-32 pt-32 pb-8 px-0">
         <div className="container2">
           <div className="ServicePage_area">
             <div className="dash_home_products_swiper_slide_img_divb">
@@ -45,7 +45,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="mission_section">
+      <section className="relative py-16 bg-[#1D2723]">
         <div className="container2">
           <motion.div
             variants={fadeIn("Up")}
@@ -282,7 +282,7 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-      <section className="ServicePage2">
+      <section className="relative pb-16 px-0 bg-[#1D2723]">
         <div className="container2">
           <motion.div
             variants={fadeIn("Up")}

@@ -82,7 +82,7 @@ button:focus {
   width: -webkit-fill-available;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 0.90em;
   height: 100%;
 }
 .custom2_container {

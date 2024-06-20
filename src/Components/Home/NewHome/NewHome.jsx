@@ -16,16 +16,16 @@ const NewHome = () => {
   return (
     <div className="NewHome_div">
       <section className="NewHome_div_section1">
-        <div className="container2">
-          <div className="NewHome_div_section1_area">
-            <div className="NewHome_div_section1_area_1">
-              <div className="NewHome_div_section1_area_1_title">
+        <div className="h-full lg:px-20 md:px-6 px-[5px] ">
+          <div className="NewHome_div_section1_area w-full">
+            <div className="w-full flex flex-col justify-center mt-32 ">
+              <div className=" lg:text-[102px] md:text-6xl text-5xl lg:w-[90%] w-full  mx-auto font-semibold mb-2 text-white">
                 Masters of Consistency and{" "}
                 <span className="NewHome_div_section1_area_1_title_span">
                   Quality.
                 </span>{" "}
               </div>
-              <div className="NewHome_div_section1_area_1_para">
+              <div className="text-xl leading-[1.5] text-white lg:w-[84%] w-auto px-2 m-auto mb-12 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
                 vero quo ea optio eum temporibus perspiciatis atque incidunt
                 nulla itaque nesciunt iure laborum quidem. Voluptatibus?
@@ -120,14 +120,14 @@ const NewHome = () => {
       {/* ==================== */}
       {/* ==================== */}
       {/* ==================== */}
-      <section className="about_new_section">
-        <div className="container2">
+      <section className="about_new_section lg:py-24 py-7">
+        <div className="container2 ">
           <div className="about_new_section_area">
-            <div className="about_new_section_area_head">
+            <div className=" text-clamp font-semibold text-white mb-6 lg:text-start text-center">
               About{" "}
               <span className="about_new_section_area_head_span">Company</span>{" "}
             </div>
-            <div className="about_new_section_area_body">
+            <div className=" flex  justify-between lg:flex-row flex-col lg:gap-0 gap-4 items-center">
               <div className="about_new_section_area_body_1">
                 <img
                   src="/img/nigeria_dotted_map.svg"
@@ -135,10 +135,10 @@ const NewHome = () => {
                   className="about_new_section_area_body_1_img"
                 />
               </div>
-              <div className="about_new_section_area_body_2">
-                <div className="about_new_section_area_body_2_cont1">
-                  <div className="about_new_section_area_body_2_cont1_div1">
-                    <div className="about_new_section_area_body_2_cont1_div1_txt1">
+              <div className="w-full flex flex-col lg:ml-20 ml-0 lg:text-start text-center lg:items-start items-center">
+                <div className="flex lg:justify-between lg:mb-[3em] mb-[1em] lg:mt-0 mt-4 lg:flex-row md:flex-row flex-col items-center justify-center md:gap-16 gap-8  ">
+                  <div className="about_new_section_area_body_2_cont1_div1 ">
+                    <div className="about_new_section_area_body_2_cont1_div1_txt1 ">
                       Produces Power
                     </div>
                     <div className="about_new_section_area_body_2_cont1_div1_txt">
@@ -162,7 +162,7 @@ const NewHome = () => {
                     </div>
                   </div>
                 </div>
-                <div className="about_new_section_area_body_2_cont2">
+                <div className=" text-clamp2 leading-[1.5] mb-8 text-white ">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
                   accusantium dolorem laboriosam facilis nisi amet, laudantium
                   voluptate nihil atque temporibus aperiam aut ut excepturi
@@ -183,8 +183,8 @@ const NewHome = () => {
       <section className="why_choose_new_section">
         <div className="container2">
           <div className="why_choose_new_section_area">
-            <div className="why_choose_new_section_area_1">
-              <div className="why_choose_new_section_area_1_title">
+            <div className="flex lg:flex-row flex-col gap-2  justify-between mb-8 ">
+              <div className=" w-full font-semibold text-black text-clamp leading-[1]">
                 Why Choose <br />{" "}
                 <span className="why_choose_new_section_area_1_title_span">
                   Phronesis
@@ -198,7 +198,7 @@ const NewHome = () => {
                 eaque odit, officiis voluptate rerum asperiores.
               </div>
             </div>
-            <div className="why_choose_new_section_area_2">
+            <div className="flex lg:flex-row flex-col">
               <div className="why_choose_new_section_area_2_cont1">
                 <div className="why_choose_new_section_area_2_cont1_div1">
                   <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
@@ -264,9 +264,9 @@ const NewHome = () => {
       {/* ==================== */}
       {/* ==================== */}
       <section className="clients_new_section">
-        <div className="container2">
+        <div className="lg:px-16 px-4">
           <div className="clients_new_section_area">
-            <div className="clients_new_section_area_heading">
+            <div className="text-clamp font-semibold text-white">
               Services We{" "}
               <span className="clients_new_section_area_heading_span">
                 Offer.
@@ -274,8 +274,8 @@ const NewHome = () => {
             </div>
             <div className="clients_new_section_area_body">
               <Swiper
-                slidesPerView={4}
-                spaceBetween={10}
+                slidesPerView={3}
+                spaceBetween={30}
                 effect={"fade"}
                 pagination={{
                   dynamicBullets: true,
@@ -283,7 +283,7 @@ const NewHome = () => {
                 }}
                 breakpoints={{
                   500: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 10,
                   },
                   // 768: {
@@ -291,11 +291,11 @@ const NewHome = () => {
                   //   spaceBetween: 40,
                   // },
                   768: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                   },
                   1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                   },
                   1200: {
@@ -369,13 +369,13 @@ const NewHome = () => {
       <section className="gallery_new_section">
         <div className="container2">
           <div className="gallery_new_section_area">
-            <div className="gallery_new_section_area_title">
+            <div className=" w-full text-clamp text-black mb-4 leading-[1]">
               Amazing{" "}
               <span className="gallery_new_section_area_title_span">
                 Gallery
               </span>{" "}
             </div>
-            <div className="gallery_new_section_area_body">
+            <div className="flex lg:flex-row flex-col lg:gap-0 gap-4  lg:items-stretch items-center">
               <div className="gallery_new_section_area_body_cont1">
                 <img
                   src="/img/dummy_gallery_img2.webp"
@@ -421,7 +421,7 @@ const NewHome = () => {
       <section className="last_new_section">
         <div className="container">
           <div className="last_new_section_area">
-            <div className="last_new_section_area_title">
+            <div className="text-clamp3 font-semibold leading-[1.1] mb-10">
               Looking for leading oil services for your company?
             </div>
             <div className="contact_numb_div">

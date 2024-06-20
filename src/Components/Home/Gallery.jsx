@@ -54,16 +54,16 @@ const Gallery = () => {
 
   return (
     <div className="gallery_div">
-      <section className="gallery_section">
+      <section className=" px-0 relative py-32 bg-[#1D2723]">
         <div className="container2">
-          <div className="gallery_section_area">
+          <div className="gallery_section_area ">
             <motion.div
               variants={fadeIn("Up")}
               transition={transition()}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -85,7 +85,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr2"
                   className="home_div_section4_area_cont2_cont2_div"
@@ -136,7 +136,7 @@ const Gallery = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -158,7 +158,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr5"
                   className="home_div_section4_area_cont2_cont2_div"
@@ -209,7 +209,7 @@ const Gallery = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -231,7 +231,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr8"
                   className="home_div_section4_area_cont2_cont2_div"
@@ -282,7 +282,7 @@ const Gallery = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -304,7 +304,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr11"
                   className="home_div_section4_area_cont2_cont2_div"
@@ -355,7 +355,7 @@ const Gallery = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -377,7 +377,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr14"
                   className="home_div_section4_area_cont2_cont2_div"
@@ -428,7 +428,7 @@ const Gallery = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -450,7 +450,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr17"
                   className="home_div_section4_area_cont2_cont2_div"
@@ -501,7 +501,7 @@ const Gallery = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -523,7 +523,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr20"
                   className="home_div_section4_area_cont2_cont2_div"
@@ -574,7 +574,7 @@ const Gallery = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false }}
-              className="home_div_section4_area_cont2"
+              className="home_div_section4_area_cont2 gap-2 "
             >
               <div
                 className="home_div_section4_area_cont2_cont1"
@@ -596,7 +596,7 @@ const Gallery = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="home_div_section4_area_cont2_cont2">
+              <div className="home_div_section4_area_cont2_cont2 gap-2">
                 <div
                   id="glr23"
                   className="home_div_section4_area_cont2_cont2_div"
