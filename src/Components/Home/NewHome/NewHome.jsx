@@ -26,9 +26,12 @@ const NewHome = () => {
                 </span>{" "}
               </div>
               <div className="text-xl leading-[1.5] text-white lg:w-[84%] w-auto px-2 m-auto mb-12 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                vero quo ea optio eum temporibus perspiciatis atque incidunt
-                nulla itaque nesciunt iure laborum quidem. Voluptatibus?
+                By effectively managing risks and ensuring quality compliance,
+                we make our clients reduce the likelihood of costly mistakes,
+                improve customer satisfaction, and maintain a positive
+                reputation in the market. These practices are essential for
+                long-term success and sustainability in today's competitive
+                business environment.
               </div>
               <div className="NewHome_div_section1_area_1_para_btns">
                 <button className="NewHome_div_section1_area_1_para_btn">
@@ -163,10 +166,11 @@ const NewHome = () => {
                   </div>
                 </div>
                 <div className=" text-clamp2 leading-[1.5] mb-8 text-white ">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                  accusantium dolorem laboriosam facilis nisi amet, laudantium
-                  voluptate nihil atque temporibus aperiam aut ut excepturi
-                  itaque fugit ipsa pariatur deserunt. Rem?
+                  While our compliance team, on the other hand, focuses on
+                  meeting standards and regulations to ensure that products or
+                  services meet industry quality requirements. This involve
+                  following industry standards, government regulations, or
+                  internal quality control measures.
                 </div>
                 <button className="getstarted_button">Get Started</button>
               </div>
@@ -191,11 +195,10 @@ const NewHome = () => {
                 </span>{" "}
               </div>
               <div className="why_choose_new_section_area_1_para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                tempora. Fugiat necessitatibus quia quidem sequi, incidunt hic
-                veniam dolorem illo corporis saepe adipisci distinctio. At,
-                aperiam! Fugit ullam corporis dolorum fugiat quam sint libero
-                eaque odit, officiis voluptate rerum asperiores.
+                Our experts pay laser-jet attention to identifying potential
+                risks that could impact a project, analyzing the likelihood of
+                these risks occurring, and taking steps to minimize or mitigate
+                them.
               </div>
             </div>
             <div className="flex lg:flex-row flex-col">
@@ -204,12 +207,13 @@ const NewHome = () => {
                   <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
                   <div className="why_choose_new_section_area_2_cont1_div1_body">
                     <div className="why_choose_new_section_area_2_cont1_div1_body_title">
-                      Empowering Our Services
+                      EXCELLENT SERVICE DELIVERY
                     </div>
                     <div className="why_choose_new_section_area_2_cont1_div1_body_para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Repellendus eum suscipit deserunt dignissimos officiis
-                      incidunt.
+                      We nothing short of top-quality service to our clients.
+                      This means going above and beyond to meet their needs and
+                      exceed their expectations. As part of our core competence,
+                      we believe that excellence is not negotiable.
                     </div>
                   </div>
                 </div>
@@ -217,12 +221,12 @@ const NewHome = () => {
                   <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
                   <div className="why_choose_new_section_area_2_cont1_div1_body">
                     <div className="why_choose_new_section_area_2_cont1_div1_body_title">
-                      Empowering Our Services
+                      RISK MANAGEMENT AND QUALITY COMPLIANCE
                     </div>
                     <div className="why_choose_new_section_area_2_cont1_div1_body_para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Repellendus eum suscipit deserunt dignissimos officiis
-                      incidunt.
+                      Risk management and quality compliance are important
+                      aspects of us ensuring that our business and projects are
+                      executed operates smoothly and effectively.
                     </div>
                   </div>
                 </div>
@@ -230,12 +234,15 @@ const NewHome = () => {
                   <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
                   <div className="why_choose_new_section_area_2_cont1_div1_body">
                     <div className="why_choose_new_section_area_2_cont1_div1_body_title">
-                      Empowering Our Services
+                      OVER 2 DECADES YEARS INDUSTRY EXPERIENCE
                     </div>
                     <div className="why_choose_new_section_area_2_cont1_div1_body_para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Repellendus eum suscipit deserunt dignissimos officiis
-                      incidunt.
+                      This isn’t about time and chance, but longevity,
+                      dexterity, excellence and zest in our craft. We have
+                      gained not just a lot of knowledge, skills, and expertise,
+                      we have also gained a badge called “MASTERY” in the field
+                      of engineering especially our core which is the oil and
+                      gas over the years.
                     </div>
                   </div>
                 </div>
@@ -247,10 +254,11 @@ const NewHome = () => {
                   className="why_choose_new_section_area_2_cont2_img"
                 />
                 <div className="why_choose_new_section_area_2_cont2_para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  repellat consequatur consequuntur non veniam, sint aliquid
-                  quae aspernatur facilis! Saepe nisi illo praesentium nesciunt
-                  minima voluptate distinctio nemo adipisci facilis?...
+                  While our compliance team, on the other hand, focuses on
+                  meeting standards and regulations to ensure that products or
+                  services meet industry quality requirements. This involve
+                  following industry standards, government regulations, or
+                  internal quality control measures.
                 </div>
               </div>
             </div>
@@ -327,6 +335,7 @@ const NewHome = () => {
                       href={`/services/${data.id}/${data.title}`}
                       className="home_div_section3_area_2_cont1"
                       id={data.id}
+                      key={data.id}
                     >
                       <div className="home_div_section3_area_2_cont1_img_div">
                         <img
