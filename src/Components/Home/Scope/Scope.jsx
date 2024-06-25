@@ -177,17 +177,17 @@ class App extends React.Component {
             {this.Getservices()}
           </div>
         );
-    }
-}
-
-
-export  function Scope() {
-    const NewApp = new App();
-  return (
+  }
+  
+  render() {
+    return (
       <div>
-    {NewApp.Scope()}
-    </div>
-  )
+        {this.Scope()}
+      </div>
+    )
+  }
 }
 
-export default Scope;
+
+
+export default App;
