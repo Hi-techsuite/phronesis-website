@@ -139,6 +139,14 @@ const Header = ({ darkMode, togglemakeDark }) => {
               </div>
 
               <a
+                href="/scope?=new-page"
+                className="header_div_area_cont2_link1"
+                onMouseOver={CloseTradeDrop}
+              >
+                Scope
+              </a>
+
+              <a
                 href="/about"
                 className="header_div_area_cont2_link1"
                 onMouseOver={CloseTradeDrop}

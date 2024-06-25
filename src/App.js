@@ -8,6 +8,7 @@ import ServicePage from "./Components/Home/ServicesPages/ServicePage";
 import Gallery from "./Components/Home/Gallery";
 import About from "./Components/Home/About";
 import NewHome from "./Components/Home/NewHome/NewHome";
+import Scope from "./Components/Home/Scope/Scope";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/scope" element={<Scope />} />
         <Route path="/services/:id/:title" element={<ServicePage />} />
       </Routes>
       <Footer />
