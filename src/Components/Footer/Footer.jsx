@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="footer_div_area_1_cont1">
               {" "}
               <img
-                src="/phronesis_logo_light.svg"
+                src="/logo.webp"
                 alt=""
                 className="header_div_area_cont1_img"
               />
@@ -29,21 +29,20 @@ const Footer = () => {
               <div className="footer_div_area_1_cont2_title">Contact</div>
               <div className="footer_div_area_1_cont2_body">
                 <div className="footer_div_area_1_cont2_body_div1">
-                  KM 15 Onne/Eleme Road, Off Eleme Junction, Port Harcourt,
-                  Rivers State
+                  Lakowe School Gate, Ibeju-Lekki Lagos, Nigeria.
                 </div>
                 <div className="footer_div_area_1_cont2_body_div1">
-                  +234803 814 9307, 805 323 9036, 847 670 93
+                  +234-816-163-7797 ,+234-811-262-7647
                 </div>
                 <div className="footer_div_area_1_cont2_body_div1">
-                  info@phronesisoilandgas.com
+                  Scaftech.info@gmail.com
                 </div>
               </div>
             </div>
           </div>
           <hr className="footer_hr" />
           <div className="footer_lastDiv">
-            © {currentYear} Phronesis Oil Co.
+            © {currentYear} Scaftech Nigeria.
           </div>
         </div>
       </div>

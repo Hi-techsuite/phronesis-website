@@ -91,9 +91,9 @@ const Header = ({ darkMode, togglemakeDark }) => {
         <div className="header_div_area">
           <a href="/" className="header_div_area_cont1">
             <img
-              src="/phronesis_logo_light.svg"
+              src="/logo.webp"
               alt=""
-              className="header_div_area_cont1_img"
+              className="header_div_area_cont1_img w-20  h-20"
             />
           </a>
 
@@ -138,21 +138,21 @@ const Header = ({ darkMode, togglemakeDark }) => {
                 ) : null}
               </div>
 
-              <a
+              {/* <a
                 href="/scope?=new-page"
                 className="header_div_area_cont2_link1"
                 onMouseOver={CloseTradeDrop}
               >
                 Scope
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href="/about"
                 className="header_div_area_cont2_link1"
                 onMouseOver={CloseTradeDrop}
               >
                 About Us
-              </a>
+              </a> */}
               <a
                 href="/gallery"
                 className="header_div_area_cont2_link1"

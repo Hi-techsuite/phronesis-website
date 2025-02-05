@@ -21,7 +21,7 @@ const About = () => {
               <div className="home_div_section1_area_div">
                 <div className="home_div_section1_area_div_area1">
                   <div className="home_div_section1_area_div_area1_txt1">
-                    Phronesis
+                    Scaftech
                   </div>
                   <motion.div
                     variants={fadeIn("Up")}

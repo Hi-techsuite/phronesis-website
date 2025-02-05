@@ -35,11 +35,11 @@ const Gallery = () => {
   ];
 
   const toggleImgPop = (e) => {
-    setImgPop(e.currentTarget.id);
-    setImgContent(`/img/gallery_imgs/${e.currentTarget.id}.jpg`);
-    console.log("====================================");
-    console.log(e.currentTarget.id);
-    console.log("====================================");
+    // setImgPop(e.currentTarget.id);
+    // setImgContent(`/img/gallery_imgs/${e.currentTarget.id}.jpg`);
+    // console.log("====================================");
+    // console.log(e.currentTarget.id);
+    // console.log("====================================");
   };
   const closeImgPop = () => {
     setImgPop("");
@@ -73,15 +73,13 @@ const Gallery = () => {
                 onMouseLeave={CloseExpandDiv}
               >
                 <img
-                  src="/img/gallery_imgs/glr1.jpg"
+                  src="/new_img/3rd-party-inspection.webp"
                   alt=""
                   className="home_div_section4_area_cont2_cont1_img"
                 />
                 {expandDiv === "glr1" ? (
                   <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
+                    <div className="Expandiv_div_txt"></div>
                   </div>
                 ) : null}
               </div>
@@ -94,15 +92,13 @@ const Gallery = () => {
                   onMouseLeave={CloseExpandDiv}
                 >
                   <img
-                    src="/img/gallery_imgs/glr2.jpg"
+                    src="/new_img/equipment-leasing.webp"
                     alt=""
                     className="home_div_section4_area_cont2_cont2_img"
                   />
                   {expandDiv === "glr2" ? (
                     <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
+                      <div className="Expandiv_div_txt"></div>
                     </div>
                   ) : null}
                 </div>
@@ -114,15 +110,13 @@ const Gallery = () => {
                   onMouseLeave={CloseExpandDiv}
                 >
                   <img
-                    src="/img/gallery_imgs/glr3.jpg"
+                    src="/new_img/equipment-maintenance.webp"
                     alt=""
                     className="home_div_section4_area_cont2_cont2_img"
                   />
                   {expandDiv === "glr3" ? (
                     <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
+                      <div className="Expandiv_div_txt"></div>
                     </div>
                   ) : null}
                 </div>
@@ -146,15 +140,13 @@ const Gallery = () => {
                 onMouseLeave={CloseExpandDiv}
               >
                 <img
-                  src="/img/gallery_imgs/glr4.jpg"
+                  src="/new_img/highrise-cleaning.webp"
                   alt=""
                   className="home_div_section4_area_cont2_cont1_img"
                 />
                 {expandDiv === "glr4" ? (
                   <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
+                    <div className="Expandiv_div_txt"></div>
                   </div>
                 ) : null}
               </div>
@@ -167,15 +159,13 @@ const Gallery = () => {
                   onMouseLeave={CloseExpandDiv}
                 >
                   <img
-                    src="/img/gallery_imgs/glr5.jpg"
+                    src="/new_img/safety-support.png"
                     alt=""
                     className="home_div_section4_area_cont2_cont2_img"
                   />
                   {expandDiv === "glr5" ? (
                     <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
+                      <div className="Expandiv_div_txt"></div>
                     </div>
                   ) : null}
                 </div>
@@ -187,15 +177,13 @@ const Gallery = () => {
                   onMouseLeave={CloseExpandDiv}
                 >
                   <img
-                    src="/img/gallery_imgs/glr6.jpg"
+                    src="/new_img/scaffolding.webp"
                     alt=""
                     className="home_div_section4_area_cont2_cont2_img"
                   />
                   {expandDiv === "glr6" ? (
                     <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
+                      <div className="Expandiv_div_txt"></div>
                     </div>
                   ) : null}
                 </div>
@@ -219,15 +207,13 @@ const Gallery = () => {
                 onMouseLeave={CloseExpandDiv}
               >
                 <img
-                  src="/img/gallery_imgs/glr7.jpg"
+                  src="/new_img/tank-calibration.webp"
                   alt=""
                   className="home_div_section4_area_cont2_cont1_img"
                 />
                 {expandDiv === "glr7" ? (
                   <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
+                    <div className="Expandiv_div_txt"></div>
                   </div>
                 ) : null}
               </div>
@@ -240,35 +226,13 @@ const Gallery = () => {
                   onMouseLeave={CloseExpandDiv}
                 >
                   <img
-                    src="/img/gallery_imgs/glr8.jpg"
+                    src="/new_img/welding-and-fabrication.png"
                     alt=""
                     className="home_div_section4_area_cont2_cont2_img"
                   />
                   {expandDiv === "glr8" ? (
                     <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-                <div
-                  id="glr9"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr9.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr9" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
+                      <div className="Expandiv_div_txt"></div>
                     </div>
                   ) : null}
                 </div>
@@ -276,369 +240,7 @@ const Gallery = () => {
             </motion.div>
             <br />
             <br />
-            <motion.div
-              variants={fadeIn("Up")}
-              transition={transition()}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false }}
-              className="home_div_section4_area_cont2 gap-2 "
-            >
-              <div
-                className="home_div_section4_area_cont2_cont1"
-                id="glr10"
-                onClick={toggleImgPop}
-                onMouseOver={OpenExpandDiv}
-                onMouseLeave={CloseExpandDiv}
-              >
-                <img
-                  src="/img/gallery_imgs/glr10.jpg"
-                  alt=""
-                  className="home_div_section4_area_cont2_cont1_img"
-                />
-                {expandDiv === "glr10" ? (
-                  <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-              <div className="home_div_section4_area_cont2_cont2 gap-2">
-                <div
-                  id="glr11"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr11.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr11" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-                <div
-                  id="glr12"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr12.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr12" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </motion.div>
-            <br />
-            <br />
-            <motion.div
-              variants={fadeIn("Up")}
-              transition={transition()}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false }}
-              className="home_div_section4_area_cont2 gap-2 "
-            >
-              <div
-                className="home_div_section4_area_cont2_cont1"
-                id="glr13"
-                onClick={toggleImgPop}
-                onMouseOver={OpenExpandDiv}
-                onMouseLeave={CloseExpandDiv}
-              >
-                <img
-                  src="/img/gallery_imgs/glr13.jpg"
-                  alt=""
-                  className="home_div_section4_area_cont2_cont1_img"
-                />
-                {expandDiv === "glr13" ? (
-                  <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-              <div className="home_div_section4_area_cont2_cont2 gap-2">
-                <div
-                  id="glr14"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr14.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr14" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-                <div
-                  id="glr15"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr15.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr15" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </motion.div>
-            <br />
-            <br />
-            <motion.div
-              variants={fadeIn("Up")}
-              transition={transition()}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false }}
-              className="home_div_section4_area_cont2 gap-2 "
-            >
-              <div
-                className="home_div_section4_area_cont2_cont1"
-                id="glr16"
-                onClick={toggleImgPop}
-                onMouseOver={OpenExpandDiv}
-                onMouseLeave={CloseExpandDiv}
-              >
-                <img
-                  src="/img/gallery_imgs/glr16.jpg"
-                  alt=""
-                  className="home_div_section4_area_cont2_cont1_img"
-                />
-                {expandDiv === "glr16" ? (
-                  <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-              <div className="home_div_section4_area_cont2_cont2 gap-2">
-                <div
-                  id="glr17"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr17.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr17" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-                <div
-                  id="glr18"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr18.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr18" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </motion.div>
-            <br />
-            <br />
-            <motion.div
-              variants={fadeIn("Up")}
-              transition={transition()}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false }}
-              className="home_div_section4_area_cont2 gap-2 "
-            >
-              <div
-                className="home_div_section4_area_cont2_cont1"
-                id="glr19"
-                onClick={toggleImgPop}
-                onMouseOver={OpenExpandDiv}
-                onMouseLeave={CloseExpandDiv}
-              >
-                <img
-                  src="/img/gallery_imgs/glr19.jpg"
-                  alt=""
-                  className="home_div_section4_area_cont2_cont1_img"
-                />
-                {expandDiv === "glr19" ? (
-                  <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-              <div className="home_div_section4_area_cont2_cont2 gap-2">
-                <div
-                  id="glr20"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr20.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr20" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-                <div
-                  id="glr21"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr21.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr21" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </motion.div>
-            <br />
-            <br />
-            <motion.div
-              variants={fadeIn("Up")}
-              transition={transition()}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false }}
-              className="home_div_section4_area_cont2 gap-2 "
-            >
-              <div
-                className="home_div_section4_area_cont2_cont1"
-                id="glr22"
-                onClick={toggleImgPop}
-                onMouseOver={OpenExpandDiv}
-                onMouseLeave={CloseExpandDiv}
-              >
-                <img
-                  src="/img/gallery_imgs/glr22.jpg"
-                  alt=""
-                  className="home_div_section4_area_cont2_cont1_img"
-                />
-                {expandDiv === "glr22" ? (
-                  <div className="Expandiv_div">
-                    <div className="Expandiv_div_txt">
-                      Click image to expand
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-              <div className="home_div_section4_area_cont2_cont2 gap-2">
-                <div
-                  id="glr23"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr23.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr23" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-                <div
-                  id="glr11"
-                  className="home_div_section4_area_cont2_cont2_div"
-                  onClick={toggleImgPop}
-                  onMouseOver={OpenExpandDiv}
-                  onMouseLeave={CloseExpandDiv}
-                >
-                  <img
-                    src="/img/gallery_imgs/glr11.jpg"
-                    alt=""
-                    className="home_div_section4_area_cont2_cont2_img"
-                  />
-                  {expandDiv === "glr11" ? (
-                    <div className="Expandiv_div">
-                      <div className="Expandiv_div_txt">
-                        Click image to expand
-                      </div>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </motion.div>
+
             <br />
             <br />
           </div>

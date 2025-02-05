@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./servicePage.css";
-import "../NewHome/newhome.css"
+import "../NewHome/newhome.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Slider from "react-slick";
 import services from "../../Static";
@@ -84,18 +84,18 @@ const ServicePage = () => {
             <div className="container2">
               <div className="ServicePage_area">
                 <div className="dash_home_products_swiper_slide_img_divb">
-                  <img
+                  {/* <img
                     src="/img/hero_img_3.webp"
                     alt=""
                     className="dash_home_products_swiper_slide_imgb"
-                  />
+                  /> */}
                   <div className="home_div_section1_fade_bg_img"></div>
                 </div>
                 <div className="home_div_section1_areab">
                   <div className="home_div_section1_area_div">
                     <div className="home_div_section1_area_div_area1">
                       <div className="home_div_section1_area_div_area1_txt1">
-                        Phronesis Service
+                        SCAFTECH Service
                       </div>
 
                       <motion.div
@@ -147,7 +147,7 @@ const ServicePage = () => {
                     protecting the planet we all inhabit.
                   </div>
                 </div>
-                
+
                 <div className="clients_new_section_area_body">
                   <Swiper
                     slidesPerView={3}
@@ -158,6 +158,11 @@ const ServicePage = () => {
                       clickable: true,
                     }}
                     breakpoints={{
+                      50: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                      },
+
                       500: {
                         slidesPerView: 1,
                         spaceBetween: 10,
