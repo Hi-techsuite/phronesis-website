@@ -41,9 +41,10 @@ const services = [
         <div className="ServicePage2_area_cont"></div>
         <br />
         <div className="ServicePage2_area_cont">
-          We produce positive results from growing Industrial estates, we have
-          established a corporate or mandate to maintain the manufacturing
-          economy.
+          Our scaffolding solutions are tailored for diverse industrial needs,
+          encompassing erecting, dismantling, design, engineering, and rentals.
+          We specialize in industrial scaffolding, shoring, formwork, and access
+          towers, ensuring the highest safety standards.
         </div>
       </div>
     ),

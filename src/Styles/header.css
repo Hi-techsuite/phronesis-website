@@ -34,7 +34,7 @@
   color: #ffffff;
 }
 .header_div_area_cont1_img {
-  width: 100px;
+  width: 200px;
   margin-right: 7px;
 }
 .header_div_area_cont3 {
@@ -171,7 +171,7 @@
   transition: all 0.1s linear;
 }
 .header_div_area_cont3_btn_contact {
-  background: #00AC0B;
+  background: #2b9768;
   color: #fff;
   padding: 12px 15px;
   width: 150px;
