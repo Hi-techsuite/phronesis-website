@@ -11,6 +11,8 @@ import "swiper/css/navigation";
 import { Pagination, EffectFade, Autoplay, Navigation } from "swiper/modules";
 import services from "../../Static";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ContactForm from "../../ContactUs";
+import GetInTouch from "../../ContactUs/GetInTouch";
 
 const NewHome = () => {
   return (
@@ -31,9 +33,12 @@ const NewHome = () => {
                 maintain.
               </div>
               <div className="NewHome_div_section1_area_1_para_btns">
-                <button className="NewHome_div_section1_area_1_para_btn">
+                <a
+                  href="#contact-us"
+                  className="NewHome_div_section1_area_1_para_btn"
+                >
                   Contact Us
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -433,6 +438,9 @@ const NewHome = () => {
           className="last_new_section_bg"
         />
       </section>
+
+      {/* <ContactForm /> */}
+      <GetInTouch />
     </div>
   );
 };

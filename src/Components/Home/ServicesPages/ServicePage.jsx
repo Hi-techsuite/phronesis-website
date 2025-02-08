@@ -84,11 +84,11 @@ const ServicePage = () => {
             <div className="container2">
               <div className="ServicePage_area">
                 <div className="dash_home_products_swiper_slide_img_divb">
-                  {/* <img
-                    src="/img/hero_img_3.webp"
+                  <img
+                    src={payload?.img}
                     alt=""
                     className="dash_home_products_swiper_slide_imgb"
-                  /> */}
+                  />
                   <div className="home_div_section1_fade_bg_img"></div>
                 </div>
                 <div className="home_div_section1_areab">

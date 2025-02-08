@@ -9,17 +9,19 @@ import Gallery from "./Components/Home/Gallery";
 import About from "./Components/Home/About";
 import NewHome from "./Components/Home/NewHome/NewHome";
 import Scope from "./Components/Home/Scope/Scope";
+import ContactPage from "./Components/ContactUs/ContactPage";
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<NewHome />} />
- 
+
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/scope" element={<Scope />} />
+        <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/services/:id/:title" element={<ServicePage />} />
       </Routes>
       <Footer />

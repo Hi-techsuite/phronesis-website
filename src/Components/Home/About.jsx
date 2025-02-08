@@ -64,9 +64,10 @@ const About = () => {
                   OUR VISION
                 </div>
                 <div className="home_div_section3_area_body_cont1_body_text_para">
-                  Phronesis is a company with the mindset of delivering high
-                  quality products and services with innovative technology, thus
-                  helping to create a better world.
+                  With a wealth of experience in engineering disciplines, and
+                  having held leadership roles in some of the industry's most
+                  prestigious firms, Scaftech was founded to bring unparalleled
+                  value to our clients.
                 </div>
               </div>
               <div className="home_div_section3_area_body_cont1_icon">
@@ -139,8 +140,9 @@ const About = () => {
                   OUR MISSION
                 </div>
                 <div className="home_div_section3_area_body_cont1_body_text_para">
-                  Powe To provide quality services to client safely while
-                  ensuring good management of the environment
+                  Our Mission is to deliver innovative, efficient, and
+                  cost-effective engineering solutions that adhere to the
+                  highest safety and quality benchmarks
                 </div>
               </div>
               <div className="home_div_section3_area_body_cont1_icon">
@@ -213,9 +215,8 @@ const About = () => {
                   OUR CORE VALUES
                 </div>
                 <div className="home_div_section3_area_body_cont1_body_text_para">
-                  Honesty and Integrity, Personal Development, Reliability,
-                  Teamwork, Professionalism, Performance, Accountability, Trust,
-                  Excellence, Speed.
+                  Our CoreValues are centered around technical excellence,
+                  customer-centric service, and ethical business practices.
                 </div>
               </div>
               <div className="home_div_section3_area_body_cont1_icon">
@@ -293,58 +294,46 @@ const About = () => {
             className="ServicePage2_area"
           >
             <div className="ServicePage2_area_cont">
-              <span>PHRONESIS OIL & GAS TEK LIMITED</span> is a full service
-              hazardous and non–hazardous waste transportation, management,
-              disposal, complete oil and gas drilling services solution Company
-              recognized for its technical expertise, commitment to safety, and
-              dedication to the protection of its clients’ long-term liability.
+              <span>Scaftech Nigeria</span> Since its inception in 2020,
+              SCAFTECH Engineering Services has been on a steadfast journey
+              towards becoming a leader in the engineering sector. Founded by a
+              team of seasoned professionals with a shared passion for
+              engineering innovation, SCAFTECH started as a vision to bring
+              advanced engineering solutions to diverse industries.
             </div>
 
             <br />
             <div className="ServicePage2_area_cont">
-              With comprehensive experience and skilled environmental
-              professionals, engineers, and managers, we provide high quality
-              service teamed with a network of nationally and internationally
-              recognized waste management and engineering facilities, to offer
-              efficient, cost-effective, and environmentally sound solutions to
-              hazardous waste management and oil and gas drilling problems.
+              In its early days, the company focused on establishing a strong
+              foundation in scaffolding and fabrication services, quickly
+              gaining recognition for its commitment to quality and safety. Over
+              the years, SCAFTECH expanded its service offerings to include
+              comprehensive engineering solutions, adapting to the evolving
+              needs of the industry.
             </div>
 
             <br />
             <div className="ServicePage2_area_cont">
-              For the past 10 years,
-              <span>PHRONESIS OIL & GAS TEK LIMITED</span> has built its
-              business on careful planning, depth in technical management, and a
-              corporate structure that promotes the reliable and successful
-              completion of customer assignments.
+              A significant milestone in SCAFTECH's history was the introduction
+              of its training and development programs, aimed at advancing the
+              skills of both its team and clients in the engineering field. This
+              move not only showcased SCAFTECH's dedication to continuous
+              improvement but also solidified its position as a forward-thinking
+              and responsible company
             </div>
             <br />
             <div className="ServicePage2_area_cont">
-              Our customers receive technical assistance in the preparation,
-              identification, and packaging of wastes for safe shipment,
-              storage, recycling and ultimate disposal if the need be. Also we
-              are committed to bridging the gap between the market and our
-              clients as we have gone to establish strong business relationship
-              with some waste management equipments, oil and gas tools
-              manufacturers within and outside the country.
+              Another key achievement was the expansion of operations to include
+              more specialized services like 3rd Party Statutory Inspection and
+              Rooftop Fall Protection, aligning with the latest industry
+              standards and client expectations.
             </div>
             <br />
             <div className="ServicePage2_area_cont">
-              The company’s management team is committed to providing the
-              manpower and the managerial oversight needed to ensure that
-              projects are completed within budget and timeframe guidelines, and
-              that client’s goals are achieved.
-            </div>
-            <br />
-            <div className="ServicePage2_area_cont">
-              <span>PHRONESIS OIL & GAS TEK LIMITED</span> understands its
-              client’s concerns and provides services that are a level above and
-              beyond expectations. Industrial waste management and remediation
-              are serious matters. Customers want the waste management firm they
-              choose to handle their waste correctly, safely, legally, and on
-              time. We believe that this is good business and do not take this
-              task lightly. It is the focus of the company’s goal for continuous
-              improvement.
+              Throughout its journey, SCAFTECH has remained true to its core
+              values of technical excellence, customer-centric service, and
+              ethical business practices, paving the way for its ongoing success
+              and growth in the competitive engineering landscape.
             </div>
           </motion.div>
         </div>
