@@ -35,7 +35,7 @@ const Footer = () => {
                   +234-816-163-7797 ,+234-811-262-7647
                 </div>
                 <div className="footer_div_area_1_cont2_body_div1">
-                  Scaftech.info@gmail.com
+                  consult@scaftechservices.com
                 </div>
               </div>
             </div>

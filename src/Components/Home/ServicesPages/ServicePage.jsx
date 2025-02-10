@@ -79,13 +79,13 @@ const ServicePage = () => {
     <>
       {" "}
       {!payload ? null : (
-        <div className="servicePageDiv ">
-          <section className=" relative py-[6em] px-0 bg-[#1D2723]">
+        <div className="servicePageDiv bg-[#1D2723]">
+          <section className=" relative py-[2em] px-0 bg-[#1D2723]">
             <div className="container2">
               <div className="ServicePage_area">
                 <div className="dash_home_products_swiper_slide_img_divb">
                   <img
-                    src={payload?.img}
+                    src={payload?.img2 || payload?.img}
                     alt=""
                     className="dash_home_products_swiper_slide_imgb"
                   />
@@ -120,7 +120,7 @@ const ServicePage = () => {
               </div>
             </div>
           </section>
-          <section className=" relative py-[6em] px-0 bg-[#1D2723] text-white">
+          <section className=" relative py-[1em] px-0 bg-[#1D2723] text-white">
             <div className="container2">
               <motion.div
                 variants={fadeIn("Up")}
@@ -134,6 +134,31 @@ const ServicePage = () => {
               </motion.div>
             </div>
           </section>
+
+          <section className="  last_new_section py-10 md:w-3/4  md:mx-auto mx-4 rounded-md">
+            <div className="container">
+              <div className="last_new_section_area">
+                <div className="text-clamp3 font-semibold leading-[1.1] mb-10 text-lg md:text-5xl">
+                  Interested in this Service?
+                </div>
+                <div className="contact_numb_div">
+                  {/* <span className="contact_numb_div_span">+234 816 163 7797</span> */}
+                  <a
+                    href={"https://wa.me/+2348161637797"}
+                    className="contact_numb_div_btn"
+                  >
+                    Send a Message
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img
+              src="/new_img/director.png"
+              alt=""
+              className="last_new_section_bg"
+            />
+          </section>
+
           <section className=" relative py-[6em] px-0 bg-[#1D2723] text-white">
             <div className="container2">
               <div className="home_div_section3_area">

@@ -115,7 +115,7 @@ const NewHome = () => {
             <div className=" flex  justify-between lg:flex-row flex-col lg:gap-0 gap-4 items-center">
               <div className="about_new_section_area_body_1">
                 <img
-                  src="/img/nigeria_dotted_map.svg"
+                  src="/new_img/nigeria_dotted_map.svg"
                   alt=""
                   className="about_new_section_area_body_1_img"
                 />
@@ -424,11 +424,16 @@ const NewHome = () => {
         <div className="container">
           <div className="last_new_section_area">
             <div className="text-clamp3 font-semibold leading-[1.1] mb-10">
-              Looking for leading oil services for your company?
+              Looking for a Leading Oil and Gas Service Provider?
             </div>
             <div className="contact_numb_div">
-              <span className="contact_numb_div_span">+234 816 163 7797</span>
-              <button className="contact_numb_div_btn">Book a call</button>
+              {/* <span className="contact_numb_div_span">+234 816 163 7797</span> */}
+              <a
+                href={"https://wa.me/+2348161637797"}
+                className="contact_numb_div_btn"
+              >
+                Drop a Message
+              </a>
             </div>
           </div>
         </div>

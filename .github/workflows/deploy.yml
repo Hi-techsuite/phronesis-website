@@ -1,7 +1,7 @@
 on:
     push:
         branches:
-            -   staging
+            -   new-mod
 name: 🚀 Deploy App on Push
 jobs:
   web-deploy:

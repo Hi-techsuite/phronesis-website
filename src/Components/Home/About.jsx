@@ -1,47 +1,86 @@
 import React from "react";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import Diversity2Icon from "@mui/icons-material/Diversity2";
+import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
+import JoinLeftIcon from "@mui/icons-material/JoinLeft";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { motion } from "framer-motion";
 import { transition } from "../../utils/transition";
 import { fadeIn, reveal } from "../../utils/variants";
+import OUrValuesModel from "../OUrValuesModel";
 const About = () => {
   return (
     <div className="servicePageDiv">
       <section className="relative bg-[#1D2723] lg:py-32 pt-32 pb-8 px-0">
-        <div className="container2">
-          <div className="ServicePage_area">
-            <div className="dash_home_products_swiper_slide_img_divb">
-              <img
-                src="/img/about_img.webp"
-                alt=""
-                className="dash_home_products_swiper_slide_imgb"
-              />
-              <div className="home_div_section1_fade_bg_img"></div>
-            </div>
-            <div className="home_div_section1_areab">
-              <div className="home_div_section1_area_div">
-                <div className="home_div_section1_area_div_area1">
-                  <div className="home_div_section1_area_div_area1_txt1">
-                    Scaftech
-                  </div>
-                  <motion.div
-                    variants={fadeIn("Up")}
-                    transition={transition()}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false }}
-                    className="home_div_section1_area_div_area1_txt2b_abt"
-                  >
-                    About Us
-                  </motion.div>
+        <div
+          className="  relative min-h-[50vh] bg-no-repeat bg-right-bottom  mx-4  md:w-3/4 md:mx-auto rounded-md px-10 py-20 flex flex-col gap-10 md:bg-contain bg-blend-overlay"
+          style={{ backgroundImage: "url('/new_img/director.png')" }}
+        >
+          <div class="absolute inset-0 bg-gradient-to-r md:from-[#ebfdf7] from-[#829b97] to-white/70 md:to-transparent rounded-md   ">
+            &nbsp;
+          </div>
+          <p className=" font-black md:text-2xl text-2xl z-[100]">
+            {" "}
+            Director's Statement{" "}
+          </p>
 
-                  <div className="home_div_section1_area_div_area1_button_div">
-                    <div className="home_div_section1_area_div_area1_button_div_icon_div">
-                      <ArrowForwardIcon className="home_div_section1_area_div_area1_button_div_icon" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <p className=" md:w-4/5 font-sans italic text-lg z-[100]">
+            <span className="font-extrabold pr-1 text-3xl font-mono">
+              &ldquo;
+            </span>
+            With a wealth of experience in engineering disciplines, and having
+            held leadership roles in some of the industry's most prestigious
+            firms, Scaftech was founded to bring unparalleled value to our
+            clients. The company is not just executing projects; it is building
+            partnerships founded on technical excellence and a shared vision of
+            a safer, more efficient world.
+            <span className="font-extrabold pl-1 text-3xl font-mono">
+              &rdquo;
+            </span>
+            <span className="font-bold  not-italic"> - Mabel</span>
+          </p>
+        </div>
+      </section>
+
+      <section className=" bg-[#1D2723] py-20">
+        <h4 className="text-3xl text-center text-white py-10 font-bold">
+          Our Core Values
+        </h4>
+        <div className="flex flex-col px-10  gap-10 ">
+          <div className="grid    xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 place-items-center ">
+            <OUrValuesModel
+              text="Understanding and satisfying our customer's need"
+              icon={<SupportAgentIcon className="text-5xl" />}
+            />
+            <OUrValuesModel
+              text="Providing Equal Oppurtunities for our employees"
+              icon={<Diversity2Icon className="text-5xl" />}
+            />
+            <OUrValuesModel
+              text="Stretching Individual Capabilities"
+              icon={<SelfImprovementIcon className="text-5xl" />}
+            />
+
+            <OUrValuesModel
+              text="  Promoting A Healthy And Safe Working Environment"
+              icon={<JoinLeftIcon className="text-5xl" />}
+            />
+          </div>
+
+          {/* <div className=" bg-white h-1"> &nbsp;</div> */}
+          <div className="grid  xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 place-items-center">
+            <OUrValuesModel
+              text="Promoting Commitment to Quality"
+              icon={<SupportAgentIcon className="text-5xl" />}
+            />
+            <OUrValuesModel
+              text="Encourage Initiative Construction Practices"
+              icon={<Diversity2Icon className="text-5xl" />}
+            />
+            <OUrValuesModel
+              text="Promoting Honesty and Integrity amongst our employees"
+              icon={<SelfImprovementIcon className="text-5xl" />}
+            />
           </div>
         </div>
       </section>

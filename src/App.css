@@ -106,6 +106,12 @@ button:focus {
   }
 }
 
+
+.about-hero {
+
+  /* background-image: url("/about-us-2.webp"); */
+  width: 100%;
+}
 /* =================== */
 /* =================== */
 /* =================== */

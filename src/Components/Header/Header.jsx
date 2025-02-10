@@ -31,48 +31,6 @@ const Header = ({ darkMode, togglemakeDark }) => {
     setHeaderMenu(!headerMenu);
   };
 
-  const serviceTitle = [
-    {
-      title: "ENVIRONMENTAL AND WASTE MANAGEMENT",
-    },
-    {
-      title: "ENHANCED SPENT TREATMENT",
-    },
-    {
-      title: " WASTE EQUIPMENT LEASING, SALE AND SUPPLY",
-    },
-    {
-      title: " WASTE TRANSPORTATION",
-    },
-    {
-      title: " EQUIPMENT LEASING PROCUREMENT",
-    },
-    {
-      title: "OIL & GAS DRILLING",
-    },
-    {
-      title: "FIELD MAINTENANCE",
-    },
-    {
-      title: "RENTAL OF DRILL CUTTINGS SKIPS",
-    },
-    {
-      title: "ENVIRONMENTAL CONSULTANCY",
-    },
-    {
-      title: "CIVIL & MECHANICAL ENGINEERING",
-    },
-    {
-      title: "ENGINEERING OVERVIEW",
-    },
-    {
-      title: "CONSTRUCTION & CIVIL WORKS",
-    },
-    {
-      title: "MECHANICAL FABRICATION",
-    },
-  ];
-
   const handleScroll = () => {
     if (window.scrollY >= 100) {
       setFixed(true);
@@ -192,29 +150,75 @@ const Header = ({ darkMode, togglemakeDark }) => {
         </div>
       </div>
       {headerMenu ? (
+        // <div className="headerMenuDiv">
+        //   <div className="headerMenuDiv_cont">
+        //     <CloseIcon
+        //       className="header_div_area_cont3_icon2"
+        //       onClick={ToggleHeaderMenu}
+        //     />
+        //     {services.map((data) => (
+        //       <a
+        //         href={`/services/${data.id}/${data.title}`}
+        //         className="headerMenuDiv_cont_1"
+        //       >
+        //         {" "}
+        //         <div className="header_div_area_cont2_link1_drop_div_cont1_div">
+        //           <SettingsIcon className="header_div_area_cont2_link1_drop_div_cont1_icon" />{" "}
+        //           <span className="headerMenuDiv_cont_1_txt">{data.title}</span>
+        //         </div>
+        //         <span className="headerMenuDiv_cont_1_icon">
+        //           {" "}
+        //           <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
+        //         </span>
+        //       </a>
+        //     ))}
+        //     <a href="/#contact-us" style={{ width: "100%" }}>
+        //       <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
+        //     </a>
+        //   </div>
+        // </div>
         <div className="headerMenuDiv">
           <div className="headerMenuDiv_cont">
             <CloseIcon
               className="header_div_area_cont3_icon2"
               onClick={ToggleHeaderMenu}
             />
-            {services.map((data) => (
+            <div className="headerMenuDiv_cont  flex flex-col gap-10 h-full ">
               <a
-                href={`/services/${data.id}/${data.title}`}
-                className="headerMenuDiv_cont_1"
+                href="/"
+                className="header_div_area_cont2_link1"
+                onMouseOver={CloseTradeDrop}
               >
-                {" "}
-                <div className="header_div_area_cont2_link1_drop_div_cont1_div">
-                  <SettingsIcon className="header_div_area_cont2_link1_drop_div_cont1_icon" />{" "}
-                  <span className="headerMenuDiv_cont_1_txt">{data.title}</span>
-                </div>
-                <span className="headerMenuDiv_cont_1_icon">
-                  {" "}
-                  <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-                </span>
+                Home
               </a>
-            ))}
-            <a href="/contact-us" style={{ width: "100%" }}>
+              <a
+                href="/services/4/Inspection%20Services"
+                className="header_div_area_cont2_link1"
+                onMouseOver={CloseTradeDrop}
+              >
+                Services
+              </a>
+              <a
+                href="/about"
+                className="header_div_area_cont2_link1"
+                onMouseOver={CloseTradeDrop}
+              >
+                About Us
+              </a>
+              <a
+                href="/gallery"
+                className="header_div_area_cont2_link1"
+                // target="_blank"
+                onMouseOver={CloseTradeDrop}
+              >
+                Gallery
+              </a>
+            </div>
+            <a
+              onClick={() => setHeaderMenu(false)}
+              href="/#contact-us"
+              className="w-full"
+            >
               <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
             </a>
           </div>
