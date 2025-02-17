@@ -17,6 +17,8 @@
   z-index: 1;
   padding: 0em 4em;
 }
+
+
 .dash_home_products_swiper_slide_imgb {
   width: 100%;
   height: 100%;
@@ -26,7 +28,7 @@
 .dash_home_products_swiper_slide_img_divb {
   position: relative;
   width: 100%;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
   height: 700px;
   object-fit: cover;
@@ -42,11 +44,11 @@
   flex-direction: column;
 }
 .ServicePage2_area_cont {
-  color: #fff;
+  color: #000;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .ServicePage2_area_cont span {
   font-weight: 700;

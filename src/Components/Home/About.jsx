@@ -8,10 +8,11 @@ import { motion } from "framer-motion";
 import { transition } from "../../utils/transition";
 import { fadeIn, reveal } from "../../utils/variants";
 import OUrValuesModel from "../OUrValuesModel";
+import Team from "../TeamMembers/Team";
 const About = () => {
   return (
     <div className="servicePageDiv">
-      <section className="relative bg-[#1D2723] lg:py-32 pt-32 pb-8 px-0">
+      <section className="relative bg-[#1D2723] lg:py-32 pt-32  px-0">
         <div
           className="  relative min-h-[50vh] bg-no-repeat bg-right-bottom  mx-4  md:w-3/4 md:mx-auto rounded-md px-10 py-20 flex flex-col gap-10 md:bg-contain bg-blend-overlay"
           style={{ backgroundImage: "url('/new_img/director.png')" }}
@@ -42,7 +43,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className=" bg-[#1D2723] py-20">
+      <section className=" bg-[#1D2723] ">
         <h4 className="text-3xl text-center text-white py-10 font-bold">
           Our Core Values
         </h4>
@@ -333,15 +334,32 @@ const About = () => {
             className="ServicePage2_area"
           >
             <div className="ServicePage2_area_cont">
-              <span>Scaftech Nigeria</span> Since its inception in 2020,
-              SCAFTECH Engineering Services has been on a steadfast journey
-              towards becoming a leader in the engineering sector. Founded by a
-              team of seasoned professionals with a shared passion for
-              engineering innovation, SCAFTECH started as a vision to bring
-              advanced engineering solutions to diverse industries.
+              SCAFTECH Engineering Services is a pioneering engineering firm
+              co-founded by industry veterans with a vision to redefine
+              engineering standards. Our Mission is to deliver innovative,
+              efficient, and cost- effective engineering solutions that adhere
+              to the highest safety and quality benchmarks.
             </div>
 
-            <br />
+            <div className="ServicePage2_area_cont">
+              At SCAFTECH, Our CoreValues are centered around technical
+              excellence, customer-centric service, and ethical business
+              practices. We are committed to understanding and fulfilling our
+              clients' diverse needs with professionalism and precision. Our
+              vision is to set new precedents in engineering excellence and
+              responsible business conduct, fostering a culture of safety,
+              sustainability, and continuous learning.
+            </div>
+
+            <div className="ServicePage2_area_cont">
+              Since its inception in 2020, SCAFTECH Engineering Services has
+              been on a steadfast journey towards becoming a leader in the
+              engineering sector. Founded by a team of seasoned professionals
+              with a shared passion for engineering innovation, SCAFTECH started
+              as a vision to bring advanced engineering solutions to diverse
+              industries.
+            </div>
+
             <div className="ServicePage2_area_cont">
               In its early days, the company focused on establishing a strong
               foundation in scaffolding and fabrication services, quickly
@@ -351,32 +369,29 @@ const About = () => {
               needs of the industry.
             </div>
 
-            <br />
             <div className="ServicePage2_area_cont">
               A significant milestone in SCAFTECH's history was the introduction
               of its training and development programs, aimed at advancing the
               skills of both its team and clients in the engineering field. This
               move not only showcased SCAFTECH's dedication to continuous
               improvement but also solidified its position as a forward-thinking
-              and responsible company
+              and responsible company.
             </div>
-            <br />
             <div className="ServicePage2_area_cont">
               Another key achievement was the expansion of operations to include
               more specialized services like 3rd Party Statutory Inspection and
               Rooftop Fall Protection, aligning with the latest industry
-              standards and client expectations.
-            </div>
-            <br />
-            <div className="ServicePage2_area_cont">
-              Throughout its journey, SCAFTECH has remained true to its core
-              values of technical excellence, customer-centric service, and
-              ethical business practices, paving the way for its ongoing success
-              and growth in the competitive engineering landscape.
+              standards and client expectations. Throughout its journey,
+              SCAFTECH has remained true to its core values of technical
+              excellence, customer-centric service, and ethical business
+              practices, paving the way for its ongoing success and growth in
+              the competitive engineering landscape.
             </div>
           </motion.div>
         </div>
       </section>
+
+      <Team />
     </div>
   );
 };

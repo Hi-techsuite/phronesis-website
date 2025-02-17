@@ -10,20 +10,28 @@ import About from "./Components/Home/About";
 import NewHome from "./Components/Home/NewHome/NewHome";
 import Scope from "./Components/Home/Scope/Scope";
 import ContactPage from "./Components/ContactUs/ContactPage";
+import Certification from "./Components/Certification";
+import WhoWeAre from "./Components/WhoWeAre";
+import KnowledgeBank from "./Components/KnowledgeBank";
 function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route path="/" element={<NewHome />} />
+      <div className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<NewHome />} />
 
-        {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/scope" element={<Scope />} />
-        <Route path="/contact-us" element={<ContactPage />} />
-        <Route path="/services/:id/:title" element={<ServicePage />} />
-      </Routes>
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/who-we-are" element={<WhoWeAre />} />
+          <Route path="/knowledge-bank" element={<KnowledgeBank />} />
+          <Route path="/certification" element={<Certification />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/scope" element={<Scope />} />
+          <Route path="/contact-us" element={<ContactPage />} />
+          <Route path="/services/:id/:title" element={<ServicePage />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

@@ -79,9 +79,10 @@ const ServicePage = () => {
     <>
       {" "}
       {!payload ? null : (
-        <div className="servicePageDiv bg-[#1D2723]">
-          <section className=" relative py-[2em] px-0 bg-[#1D2723]">
-            <div className="container2">
+        <div className="servicePageDiv text-black bg-white">
+          {/* <div className="servicePageDiv bg-[#1D2723]"> */}
+          <section className=" relative  px-0 bg-white">
+            <div className="">
               <div className="ServicePage_area">
                 <div className="dash_home_products_swiper_slide_img_divb">
                   <img
@@ -120,7 +121,7 @@ const ServicePage = () => {
               </div>
             </div>
           </section>
-          <section className=" relative py-[1em] px-0 bg-[#1D2723] text-white">
+          <section className=" relative py-[1em] px-0  text-black">
             <div className="container2">
               <motion.div
                 variants={fadeIn("Up")}
@@ -128,45 +129,21 @@ const ServicePage = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false }}
-                className="text-white"
+                className=""
               >
                 {payload.body}
               </motion.div>
             </div>
           </section>
 
-          <section className="  last_new_section py-10 md:w-3/4  md:mx-auto mx-4 rounded-md">
-            <div className="container">
-              <div className="last_new_section_area">
-                <div className="text-clamp3 font-semibold leading-[1.1] mb-10 text-lg md:text-5xl">
-                  Interested in this Service?
-                </div>
-                <div className="contact_numb_div">
-                  {/* <span className="contact_numb_div_span">+234 816 163 7797</span> */}
-                  <a
-                    href={"https://wa.me/+2348161637797"}
-                    className="contact_numb_div_btn"
-                  >
-                    Send a Message
-                  </a>
-                </div>
-              </div>
-            </div>
-            <img
-              src="/new_img/director.png"
-              alt=""
-              className="last_new_section_bg"
-            />
-          </section>
-
-          <section className=" relative py-[6em] px-0 bg-[#1D2723] text-white">
+          {/* <section className=" relative py-[6em] px-0">
             <div className="container2">
               <div className="home_div_section3_area">
                 <div className="home_div_section3_area_1">
                   <div className="home_div_section3_area_1_title">
                     Other Services
                   </div>
-                  <div className=" w-6/12 font-light text-[18px] text-white">
+                  <div className=" w-6/12 font-light text-[18px">
                     As our business operations expand, so do the initiatives we
                     undertake to ensure we leave an enduring legacy of
                     protecting the planet we all inhabit.
@@ -265,7 +242,7 @@ const ServicePage = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       )}
     </>

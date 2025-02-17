@@ -15,6 +15,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 import { transition, transition2 } from "../../utils/transition";
 import { NavLink } from "react-router-dom";
+import TopHeader from "./TopHeader";
+import Sample from "./sampl";
 
 const Header = ({ darkMode, togglemakeDark }) => {
   const [tradeDrop, setTradeDrop] = useState(false);
@@ -43,9 +45,15 @@ const Header = ({ darkMode, togglemakeDark }) => {
 
   return (
     <div
-      className={fixed ? "header_div_fixed" : "header_div"}
+      // className={fixed ? "header_div_fixed" : "header_div"}
+      // className={fixed ? "header_div_fixed" : "header_div"}
+      className="header_div_fixed "
       onMouseLeave={CloseTradeDrop}
     >
+      <TopHeader fixed={true} />
+
+      {/* <Sample /> */}
+
       <div className="container2">
         <div className=" flex items-center  justify-between  gap-3">
           <a href="/" className="">
@@ -85,7 +93,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
                 onMouseOver={OpenTradeDrop}
                 // onMouseLeave={CloseTradeDrop}
               >
-                Services <ExpandMoreIcon />{" "}
+                Services <ExpandMoreIcon />
                 {tradeDrop ? (
                   <motion.div
                     variants={fadeIn("down")}
@@ -120,13 +128,63 @@ const Header = ({ darkMode, togglemakeDark }) => {
                 Scope
               </a> */}
 
-              <a
+              {/* <a
                 href="/about"
                 className="header_div_area_cont2_link1"
                 onMouseOver={CloseTradeDrop}
               >
                 About Us
-              </a>
+              </a> */}
+              <div className="relative group   hover:bg-[#2b9768] py-2 px-[15px] rounded-full ">
+                <button className="flex items-center justify-between w-full py-2 px-3 font-medium text-black border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+                  About Us
+                  <svg
+                    className="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <div className="absolute z-10   group-hover:block w-[200px] hover:grid grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700 hidden">
+                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                    <ul className="space-y-4">
+                      <li>
+                        <a
+                          href="/who-we-are"
+                          className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"
+                        >
+                          Who we Are
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/certification"
+                          className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"
+                        >
+                          Award and Certification
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/knowledge-bank"
+                          className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"
+                        >
+                          Knowledge Bank
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <a
                 href="/gallery"
                 className="header_div_area_cont2_link1"
@@ -198,6 +256,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
               >
                 Services
               </a>
+
               <a
                 href="/about"
                 className="header_div_area_cont2_link1"

@@ -10,15 +10,15 @@
   color: #fff;
 }
 .header_div_fixed {
-  position: fixed;
+  /* position: fixed; */
   width: 100vw;
   top: 0;
-  background: #000000b8;
+  background: #fff;
   border-bottom: solid 1px #ffffff17;
   z-index: 100;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(8px);
-  color: #fff;
+  color: #000;
 }
 .header_div_area {
   display: flex;
@@ -106,7 +106,7 @@
 }
 .header_div_area_cont2_link1 {
   margin: 0em;
-  color: #ffffff;
+  color: #000;
   font-size: 16px;
   font-weight: 400;
   display: flex;
@@ -373,7 +373,7 @@
     justify-content: flex-end;
   }
   .headerMenuDiv_cont {
-    background: #000;
+    background: #fff;
     width: 100%;
     padding: 2em 1em;
     display: flex;
