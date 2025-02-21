@@ -18,7 +18,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 .NewHome_div_section1_area {
   display: flex;
@@ -216,9 +216,11 @@
   display: flex;
   cursor: pointer;
   background: #f6f6f6;
+  border: solid rgba(54, 52, 52, 0.211) ;
   margin-bottom: 1em;
   border-radius: 20px;
 }
+
 .why_choose_new_section_area_2_cont1_div1_icon {
   font-size: 28px !important;
   background: #fff;
@@ -228,20 +230,24 @@
   margin-right: 1em;
   color: #373737;
 }
+
 .why_choose_new_section_area_2_cont1_div1_body {
   display: flex;
   flex-direction: column;
 }
+
 .why_choose_new_section_area_2_cont1_div1_body_title {
   font-weight: 600;
   font-size: 20px;
 }
+
 .why_choose_new_section_area_2_cont1_div1_body_para {
   font-size: 14px;
   margin-top: 1em;
   color: #4f4f4f;
   line-height: 1.5;
 }
+
 .why_choose_new_section_area_2_cont2 {
   width: 100%;
   display: flex;

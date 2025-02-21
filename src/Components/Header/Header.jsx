@@ -54,33 +54,20 @@ const Header = ({ darkMode, togglemakeDark }) => {
 
       {/* <Sample /> */}
 
-      <div className="container2">
-        <div className=" flex items-center  justify-between  gap-3">
+      <div className="container2 ">
+        <div className=" py-5 flex items-center  justify-between  gap-3">
           <a href="/" className="">
             <img src="/logo.webp" alt="" className=" w-2/4 md:w-40" />
           </a>
 
-          <div className="flex  gap-3 ">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-green-400 w-10 "
-                viewBox="0 0 512 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"
-                ></path>
-              </svg>
-            </div>
-            <div className="flex  flex-col text-sm">
-              <span className="font-extrabold">ISO 9001</span>
-              CERTIFIED
+          <div className="flex  gap-3 md:w-40 w-80 ">
+            <div className="">
+              <img src="/new_img/iso9001.png" alt="" />
             </div>
           </div>
 
-          <div className="header_div_area_cont3">
-            <div className="header_div_area_cont2">
+          <div className="header_div_area_cont3 ">
+            <div className="header_div_area_cont2 px-6">
               <a
                 href="/"
                 className="header_div_area_cont2_link1"
@@ -88,6 +75,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
               >
                 Home
               </a>
+
               <div
                 className="header_div_area_cont2_link1"
                 onMouseOver={OpenTradeDrop}
@@ -120,21 +108,6 @@ const Header = ({ darkMode, togglemakeDark }) => {
                 ) : null}
               </div>
 
-              {/* <a
-                href="/scope?=new-page"
-                className="header_div_area_cont2_link1"
-                onMouseOver={CloseTradeDrop}
-              >
-                Scope
-              </a> */}
-
-              {/* <a
-                href="/about"
-                className="header_div_area_cont2_link1"
-                onMouseOver={CloseTradeDrop}
-              >
-                About Us
-              </a> */}
               <div className="relative group   hover:bg-[#2b9768] py-2 px-[15px] rounded-full ">
                 <button className="flex items-center justify-between w-full py-2 px-3 font-medium text-black border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
                   About Us
@@ -199,11 +172,33 @@ const Header = ({ darkMode, togglemakeDark }) => {
               onClick={ToggleHeaderMenu}
               onMouseOver={CloseTradeDrop}
             />
-            <a href={"/#contact-us"}>
-              <button className="header_div_area_cont3_btn_contact">
-                Contact Us
-              </button>
+            <a
+              href="/get-quote"
+              class="hidden  box-border relative z-30 md:inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-green-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-green-500 ease focus:outline-none"
+            >
+              <span class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
+              <span class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
+              <span class="relative z-20 flex items-center text-sm">
+                <svg
+                  class="relative w-5 h-5 mr-2 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+                Request Quote
+              </span>
             </a>
+            {/* <a href={"/#contact-us"}>
+              <button className=" flex-nowrap"></button>
+            </a> */}
           </div>
         </div>
       </div>
@@ -244,42 +239,63 @@ const Header = ({ darkMode, togglemakeDark }) => {
             <div className="headerMenuDiv_cont  flex flex-col gap-10 h-full ">
               <a
                 href="/"
-                className="header_div_area_cont2_link1"
                 onMouseOver={CloseTradeDrop}
+                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
-                Home
+                <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                <span class="relative">Home</span>
               </a>
               <a
                 href="/services/4/Inspection%20Services"
-                className="header_div_area_cont2_link1"
                 onMouseOver={CloseTradeDrop}
+                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
-                Services
+                <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                <span class="relative">Services</span>
               </a>
-
               <a
-                href="/about"
-                className="header_div_area_cont2_link1"
+                href="/who-we-are"
                 onMouseOver={CloseTradeDrop}
+                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
-                About Us
+                <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                <span class="relative">About Us</span>
               </a>
               <a
                 href="/gallery"
-                className="header_div_area_cont2_link1"
-                // target="_blank"
                 onMouseOver={CloseTradeDrop}
+                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
-                Gallery
+                <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                <span class="relative">Gallery</span>
+              </a>
+
+              <a
+                onClick={() => setHeaderMenu(false)}
+                href="/get-quote"
+                class="box-border relative z-30 md:inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-green-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-green-500 ease focus:outline-none"
+              >
+                <span class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
+                <span class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
+                <span class="relative z-20 flex items-center text-sm">
+                  <svg
+                    class="relative w-5 h-5 mr-2 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    ></path>
+                  </svg>
+                  Request Quote
+                </span>
               </a>
             </div>
-            <a
-              onClick={() => setHeaderMenu(false)}
-              href="/#contact-us"
-              className="w-full"
-            >
-              <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
-            </a>
           </div>
         </div>
       ) : null}

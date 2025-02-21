@@ -22,7 +22,7 @@ const Certification = () => {
       </section>
 
       <section>
-        <div className="flex  w-4/5 mx-auto py-20">
+        <div className="flex md:flex-row px-5 flex-col md:w-4/5 mx-auto py-20 gap-10">
           <div className="flex flex-col gap-3">
             <h3 className="text-xl uppercase font-bold">
               In addition to our quality management system, ScafTech Engineering
@@ -30,7 +30,7 @@ const Certification = () => {
               agencies, local and international professional bodies such as:
             </h3>
 
-            <ul className="flex flex-col gap-2 uppercase">
+            <ul className="flex flex-col gap-2  text-sm">
               <li>International Association of Drilling Contractors [IADC]</li>
               <li>American Bureau of Shipping[ABS]</li>
               <li>Lifting Equipment Engineer Association (LEEA)</li>

@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 import { transition } from "../../utils/transition";
 import ReactPlayer from "react-player";
+import Team from "../TeamMembers/Team";
 const WhoWeAre = () => {
   return (
     <div>
       <section className="">
         <div
-          className="text-start bg-[#8a97ab] md:bg-right-top bg-center bg-blend-multiply text-white  xl:text-6xl md:text-5xl flex justify-center items-center max-h-[40dvh] h-screen text-3xl flex-col font-extrabold "
-          style={{ backgroundImage: "url('/new_img/backdrop.jpg')" }}
+          className="text-start bg-[#8a97ab] md:bg-bottom bg-cover bg-center bg-no-repeat  bg-blend-multiply text-white  xl:text-6xl md:text-5xl flex justify-center items-center max-h-[40dvh] h-screen text-3xl flex-col font-extrabold "
+          style={{ backgroundImage: "url('/new_img/inspection-2.jpg')" }}
         >
           <h1>Who we Are</h1>
         </div>
@@ -86,7 +87,7 @@ const WhoWeAre = () => {
         viewport={{ once: false }}
       >
         <section>
-          <div className="flex  w-4/5 mx-auto py-20 gap-10">
+          <div className="flex  md:flex-row flex-col w-full md:w-4/5 mx-auto px-10 py-20 overflow-hidden gap-10">
             <div className="">
               <ReactPlayer
                 // loop
@@ -94,7 +95,7 @@ const WhoWeAre = () => {
               />
             </div>
 
-            <div className="flex flex-col gap-4 ">
+            <div className="flex  flex-col gap-4 ">
               <h1 className="xl:text-4xl font-bold uppercase">
                 Our Awards and Certifications
               </h1>
@@ -172,6 +173,8 @@ const WhoWeAre = () => {
           </div>
         </div>
       </section>
+
+      <Team />
     </div>
   );
 };

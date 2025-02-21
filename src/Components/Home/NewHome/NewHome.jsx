@@ -15,12 +15,13 @@ import ContactForm from "../../ContactUs";
 import GetInTouch from "../../ContactUs/GetInTouch";
 import Testimonies from "../../Testimonies";
 import { useNavigate } from "react-router-dom";
+import SpliderHero from "../../Hero/SpliderHero";
 
 const NewHome = () => {
   const navigate = useNavigate();
   return (
     <div className="NewHome_div">
-      <section className="NewHome_div_section1">
+      <section className="NewHome_div_section1 hidden">
         <div className="h-full lg:px-20 md:px-6 xl:px-[5px] ">
           <div className="NewHome_div_section1_area w-full">
             <div className=" flex flex-col  mt-32 text-white gap-4 ">
@@ -75,6 +76,8 @@ const NewHome = () => {
         />
         <div className="dark_bg"></div>
       </section>
+
+      <SpliderHero />
 
       {/* ==================== */}
       {/* ==================== */}
@@ -247,13 +250,13 @@ const NewHome = () => {
             </div>
             <div className="flex lg:flex-row flex-col">
               <div className="why_choose_new_section_area_2_cont1">
-                <div className="why_choose_new_section_area_2_cont1_div1 hover:bg-[#89a1c4]">
+                <div className="why_choose_new_section_area_2_cont1_div1 hover:bg-[#2b9768]  group`">
                   <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
                   <div className="why_choose_new_section_area_2_cont1_div1_body">
                     <div className="why_choose_new_section_area_2_cont1_div1_body_title">
                       Our Job Handling Approach
                     </div>
-                    <div className="why_choose_new_section_area_2_cont1_div1_body_para">
+                    <div className="why_choose_new_section_area_2_cont1_div1_body_para  ">
                       A comprehensive understanding of the service work scope is
                       essential to achieving our core objectives of safety,
                       quality, and exceptional service delivery. This
@@ -262,7 +265,7 @@ const NewHome = () => {
                     </div>
                   </div>
                 </div>
-                <div className="why_choose_new_section_area_2_cont1_div1  hover:bg-[#89a1c4]">
+                <div className="why_choose_new_section_area_2_cont1_div1  hover:bg-[#2b9768]">
                   <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
                   <div className="why_choose_new_section_area_2_cont1_div1_body">
                     <div className="why_choose_new_section_area_2_cont1_div1_body_title">
@@ -278,7 +281,7 @@ const NewHome = () => {
                     </div>
                   </div>
                 </div>
-                <div className="why_choose_new_section_area_2_cont1_div1  hover:bg-[#89a1c4]">
+                <div className="why_choose_new_section_area_2_cont1_div1  hover:bg-[#2b9768]">
                   <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
                   <div className="why_choose_new_section_area_2_cont1_div1_body">
                     <div className="why_choose_new_section_area_2_cont1_div1_body_title">

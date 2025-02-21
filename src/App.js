@@ -13,17 +13,21 @@ import ContactPage from "./Components/ContactUs/ContactPage";
 import Certification from "./Components/Certification";
 import WhoWeAre from "./Components/WhoWeAre";
 import KnowledgeBank from "./Components/KnowledgeBank";
+import GetQuote from "./Components/Quote";
+import MegaMenu from "./Components/Header/sampl";
+
 function App() {
   return (
     <div className="App">
+      <MegaMenu />
       <Header />
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<NewHome />} />
-
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
+          <Route path="/get-quote" element={<GetQuote />} />
           <Route path="/knowledge-bank" element={<KnowledgeBank />} />
           <Route path="/certification" element={<Certification />} />
           <Route path="/gallery" element={<Gallery />} />
