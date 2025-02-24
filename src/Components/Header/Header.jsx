@@ -1,27 +1,17 @@
 import React, { useState } from "react";
 import "../../Styles/header.css";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
-import NightsStayIcon from "@mui/icons-material/NightsStay";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import SettingsIcon from "@mui/icons-material/Settings";
-import services from "../Static";
-import NorthEastIcon from "@mui/icons-material/NorthEast";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../utils/variants";
-import { transition, transition2 } from "../../utils/transition";
-import { NavLink } from "react-router-dom";
 import TopHeader from "./TopHeader";
-import Sample from "./sampl";
+import { services_data } from "./ServicesStatic";
+import ServicesDropdown from "./ServiceDropdown";
+import Dropdown from "./Dropdown/dropdown";
 
 const Header = ({ darkMode, togglemakeDark }) => {
   const [tradeDrop, setTradeDrop] = useState(false);
   const [headerMenu, setHeaderMenu] = useState(false);
   const [fixed, setFixed] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   const OpenTradeDrop = () => {
     setTradeDrop(true);
@@ -42,17 +32,20 @@ const Header = ({ darkMode, togglemakeDark }) => {
   };
 
   window.addEventListener("scroll", handleScroll);
+  const handleMouseEnter = (index) => {
+    setOpenDropdown(index);
+  };
 
+  const handleMouseLeave = () => {
+    setOpenDropdown(null);
+  };
   return (
     <div
-      // className={fixed ? "header_div_fixed" : "header_div"}
       // className={fixed ? "header_div_fixed" : "header_div"}
       className="header_div_fixed "
       onMouseLeave={CloseTradeDrop}
     >
       <TopHeader fixed={true} />
-
-      {/* <Sample /> */}
 
       <div className="container2 ">
         <div className=" py-5 flex items-center  justify-between  gap-3">
@@ -76,88 +69,115 @@ const Header = ({ darkMode, togglemakeDark }) => {
                 Home
               </a>
 
-              <div
-                className="header_div_area_cont2_link1"
-                onMouseOver={OpenTradeDrop}
-                // onMouseLeave={CloseTradeDrop}
-              >
-                Services <ExpandMoreIcon />
-                {tradeDrop ? (
-                  <motion.div
-                    variants={fadeIn("down")}
-                    transition={transition2()}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false }}
-                    className="header_div_area_cont2_link1_drop_div"
-                    onMouseLeave={CloseTradeDrop}
-                  >
-                    {services.map((data) => (
-                      <a
-                        href={`/services/${data.id}/${data.title}`}
-                        className="header_div_area_cont2_link1_drop_div_cont1"
-                      >
-                        <div className="header_div_area_cont2_link1_drop_div_cont1_div">
-                          <SettingsIcon className="header_div_area_cont2_link1_drop_div_cont1_icon" />{" "}
-                          {data.title}
-                        </div>
-                        {/* <NorthEastIcon className="header_div_area_cont2_link1_drop_div_cont1_arrow" /> */}
-                      </a>
-                    ))}
-                  </motion.div>
-                ) : null}
+              <div class="dropdown relative inline-flex [--trigger:hover] rtl:[--placement:bottom-end]">
+                <a
+                  id="dropdown-hover"
+                  type="button"
+                  class="dropdown-toggle flex gap-2 "
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                  aria-label="Dropdown"
+                >
+                  About Us
+                  <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full "
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="dropdown-hover"
+                >
+                  <li>
+                    <a class="dropdown-item" href="/who-we-are">
+                      Who we Are
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/certification">
+                      Award and Certification
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/knowledge-bank">
+                      Knowledge Bank
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown relative inline-flex [--trigger:hover] rtl:[--placement:bottom-end]">
+                <a
+                  id="dropdown-hover"
+                  type="button"
+                  class="dropdown-toggle flex gap-2 "
+                  aria-haspopup="menu"
+                  aria-expanded="false"
+                  aria-label="Dropdown"
+                >
+                  Services
+                  <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full "
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="dropdown-hover"
+                >
+                  {services_data
+                    .filter((aa) => aa.type === "main-list")
+                    .map((data, index) => {
+                      return (
+                        <li
+                          class="dropdown relative [--offset:15] max-sm:[--placement:bottom-start] [--placement:right-start]"
+                          key={index}
+                        >
+                          {services_data.filter(
+                            (ab) => ab.belongsTo === data.name
+                          ).length > 0 ? (
+                            <>
+                              <button
+                                id="second-level"
+                                class="dropdown-toggle py-4 dropdown-item justify-between"
+                                aria-haspopup="menu"
+                                aria-expanded="false"
+                                aria-label="Dropdown"
+                              >
+                                {data.name}
+                                <span class="icon-[tabler--chevron-right] size-4 rtl:rotate-180"></span>
+                              </button>
+
+                              <ul
+                                role="menu"
+                                aria-orientation="vertical"
+                                aria-labelledby="second-level"
+                                class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60"
+                              >
+                                {services_data
+                                  .filter((ac) => ac.belongsTo === data.name)
+                                  .map((ad, index) => {
+                                    return (
+                                      <li
+                                        key={index}
+                                        class="dropdown-item py-4"
+                                      >
+                                        <a href={`/services${ad.url}`}>
+                                          {ad.name}
+                                        </a>
+                                      </li>
+                                    );
+                                  })}
+                              </ul>
+                            </>
+                          ) : (
+                            <a class="dropdown-item" href="/who-we-are">
+                              {data.name}
+                            </a>
+                          )}
+                        </li>
+                      );
+                    })}
+                </ul>
               </div>
 
-              <div className="relative group   hover:bg-[#2b9768] py-2 px-[15px] rounded-full ">
-                <button className="flex items-center justify-between w-full py-2 px-3 font-medium text-black border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
-                  About Us
-                  <svg
-                    className="w-2.5 h-2.5 ms-3"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-                </button>
-                <div className="absolute z-10   group-hover:block w-[200px] hover:grid grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700 hidden">
-                  <div className="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
-                    <ul className="space-y-4">
-                      <li>
-                        <a
-                          href="/who-we-are"
-                          className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"
-                        >
-                          Who we Are
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/certification"
-                          className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"
-                        >
-                          Award and Certification
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/knowledge-bank"
-                          className="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group"
-                        >
-                          Knowledge Bank
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
               <a
                 href="/gallery"
                 className="header_div_area_cont2_link1"
@@ -203,33 +223,6 @@ const Header = ({ darkMode, togglemakeDark }) => {
         </div>
       </div>
       {headerMenu ? (
-        // <div className="headerMenuDiv">
-        //   <div className="headerMenuDiv_cont">
-        //     <CloseIcon
-        //       className="header_div_area_cont3_icon2"
-        //       onClick={ToggleHeaderMenu}
-        //     />
-        //     {services.map((data) => (
-        //       <a
-        //         href={`/services/${data.id}/${data.title}`}
-        //         className="headerMenuDiv_cont_1"
-        //       >
-        //         {" "}
-        //         <div className="header_div_area_cont2_link1_drop_div_cont1_div">
-        //           <SettingsIcon className="header_div_area_cont2_link1_drop_div_cont1_icon" />{" "}
-        //           <span className="headerMenuDiv_cont_1_txt">{data.title}</span>
-        //         </div>
-        //         <span className="headerMenuDiv_cont_1_icon">
-        //           {" "}
-        //           <KeyboardArrowRightIcon className="headerMenuDiv_cont_1_icon_icon" />{" "}
-        //         </span>
-        //       </a>
-        //     ))}
-        //     <a href="/#contact-us" style={{ width: "100%" }}>
-        //       <button className="headerMenuDiv_cont_1_btn">Contact Us</button>
-        //     </a>
-        //   </div>
-        // </div>
         <div className="headerMenuDiv">
           <div className="headerMenuDiv_cont">
             <CloseIcon
@@ -240,7 +233,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
               <a
                 href="/"
                 onMouseOver={CloseTradeDrop}
-                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+                class=" rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
                 <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                 <span class="relative">Home</span>
@@ -248,7 +241,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
               <a
                 href="/services/4/Inspection%20Services"
                 onMouseOver={CloseTradeDrop}
-                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+                class=" rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
                 <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                 <span class="relative">Services</span>
@@ -256,7 +249,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
               <a
                 href="/who-we-are"
                 onMouseOver={CloseTradeDrop}
-                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+                class=" rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
                 <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                 <span class="relative">About Us</span>
@@ -264,7 +257,7 @@ const Header = ({ darkMode, togglemakeDark }) => {
               <a
                 href="/gallery"
                 onMouseOver={CloseTradeDrop}
-                class="relative rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+                class=" rounded px-5 py-2.5 overflow-hidden group bg-transparent relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-black hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
               >
                 <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                 <span class="relative">Gallery</span>

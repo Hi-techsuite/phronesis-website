@@ -30,7 +30,7 @@ const SpliderHero = () => {
                   backgroundImage: "url('/new_img/fabrication-service.png')",
                 }}
               >
-                <div class="absolute inset-0 bg-[#16243a]/70 backdrop-blur"></div>
+                <div class="absolute inset-0 bg-[#16243a]/70 "></div>
                 <div className="z-10 text-white  flex  gap-2 xl:gap-5 flex-col ">
                   <p className=" font-bold text-nowrap text-3xl xl:text-5xl  ">
                     Global Leader
@@ -53,7 +53,7 @@ const SpliderHero = () => {
                   backgroundImage: "url('/new_img/crane.jpg')",
                 }}
               >
-                <div class="absolute inset-0 bg-[#16243a]/70 backdrop-blur"></div>
+                <div class="absolute inset-0 bg-[#16243a]/70 "></div>
                 <div className="z-10 text-white  flex  gap-2 xl:gap-5 flex-col ">
                   <p className=" font-bold text-nowrap text-3xl xl:text-5xl  ">
                     Veteran Asset Perfection <br /> Assurance
@@ -76,7 +76,8 @@ const SpliderHero = () => {
                   backgroundImage: "url('/new_img/training-program.png')",
                 }}
               >
-                <div class="absolute inset-0 bg-[#16243a]/70 backdrop-blur"></div>
+                <div class="absolute inset-0 bg-[#16243a]/70 "></div>
+
                 <div className="z-10 text-white  flex  gap-2 xl:gap-5 flex-col ">
                   <p className=" font-bold text-nowrap text-3xl xl:text-5xl  ">
                     Training Solutions

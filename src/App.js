@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import ServicePage from "./Components/Home/ServicesPages/ServicePage";
 import Gallery from "./Components/Home/Gallery";
 import About from "./Components/Home/About";
@@ -14,12 +14,12 @@ import Certification from "./Components/Certification";
 import WhoWeAre from "./Components/WhoWeAre";
 import KnowledgeBank from "./Components/KnowledgeBank";
 import GetQuote from "./Components/Quote";
-import MegaMenu from "./Components/Header/sampl";
+import MegaMenu from "./Components/Header/MegaMenu";
+import ServicePageModel from "./Components/Home/ServicesPages/ServicesPageModel";
 
 function App() {
   return (
     <div className="App">
-      <MegaMenu />
       <Header />
       <div className="min-h-screen">
         <Routes>
@@ -34,6 +34,7 @@ function App() {
           <Route path="/scope" element={<Scope />} />
           <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/services/:id/:title" element={<ServicePage />} />
+          <Route path="/services/:url" element={<ServicePageModel />} />
         </Routes>
       </div>
       <Footer />

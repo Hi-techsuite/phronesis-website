@@ -30,7 +30,7 @@ const Certification = () => {
               agencies, local and international professional bodies such as:
             </h3>
 
-            <ul className="flex flex-col gap-2  text-sm">
+            <ul className="flex flex-col gap-2  list-disc text-sm">
               <li>International Association of Drilling Contractors [IADC]</li>
               <li>American Bureau of Shipping[ABS]</li>
               <li>Lifting Equipment Engineer Association (LEEA)</li>

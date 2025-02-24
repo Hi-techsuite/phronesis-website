@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 const flowbite = require("flowbite-react/tailwind");
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", flowbite.content()],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/flyonui/dist/js/*.js",
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -14,5 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: [flowbite.plugin()],
+  plugins: [require("flyonui"), require("flyonui/plugin")],
 };
