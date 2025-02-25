@@ -249,10 +249,10 @@ const NewHome = () => {
               </div>
             </div>
             <div className="flex lg:flex-row flex-col">
-              <div className="why_choose_new_section_area_2_cont1">
-                <div className="why_choose_new_section_area_2_cont1_div1 hover:bg-[#2b9768]  group`">
-                  <MiscellaneousServicesIcon className="why_choose_new_section_area_2_cont1_div1_icon" />
-                  <div className="why_choose_new_section_area_2_cont1_div1_body">
+              <div className="  grid grid-cols-1  gap-20 xl:grid-cols-3">
+                <div className="why_choose_new_section_area_2_cont1_div1  hover:bg-[#2b9768]  group  flex flex-col`">
+                  <div className="why_choose_new_section_area_2_cont1_div1_body flex py-5 gap-3 ">
+                    <MiscellaneousServicesIcon className="" />
                     <div className="why_choose_new_section_area_2_cont1_div1_body_title">
                       Our Job Handling Approach
                     </div>
