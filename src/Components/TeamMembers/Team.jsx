@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { transition } from "../../utils/transition";
 import { fadeIn } from "../../utils/variants";
 
+// this is the team member page
+
 const Team = () => {
   const mentors = [
     {
