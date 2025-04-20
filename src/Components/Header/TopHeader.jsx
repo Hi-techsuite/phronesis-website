@@ -2,14 +2,21 @@ import React from "react";
 
 const TopHeader = ({ fixed }) => {
   return (
-    <div className=" hidden xl:flex px-10 py-3 text-white bg-[#17233a] justify-around md:flex">
+    <div className=" hidden xl:flex px-10 py-3 text-white bg-[#17233a] justify-around md:flex items-center">
       <div className="flex gap-10">
         <p className=""> consult@scaftechservices.com </p>
         <p className="">Phone Lagos: 07086419457 </p>
         <p className="">Phone Port Harcourt: 09028728144 </p>
       </div>
 
-      <div>
+      <div className="flex gap-4 items-center">
+        <a
+          href="/verify-certificate"
+          className="relative inline-block px-6 py-2 text-white bg-[#062b6c] rounded-sm shadow-lg animate-pulse text-xs"
+        >
+          Verify Certificate
+          <span className="absolute inset-0 rounded-full bg-[#6c2506] opacity-50 blur-md animate-ping"></span>
+        </a>
         <ul class="flex gap-3">
           <li class="wp-social-link wp-social-link-facebook  wp-block-social-link">
             <a href="https://www.facebook.com/Scaftechengineeringservices/">

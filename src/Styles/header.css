@@ -10,7 +10,7 @@
   color: #fff;
 }
 .header_div_fixed {
-  /* position: fixed; */
+  position: fixed;
   width: 100vw;
   top: 0;
   background: #fff;

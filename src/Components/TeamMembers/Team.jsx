@@ -8,17 +8,16 @@ import { fadeIn } from "../../utils/variants";
 const Team = () => {
   const mentors = [
     {
-      title:
-        "Operations | Project Management | Emotional Intelligence | Individual & Corporate Wellbeing",
-      name: "George Osum",
-      experience: "5+ Years",
+      title: "Human Resources Management",
+      name: "Victoria  Bassey Iton",
+      experience: "",
       image:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww",
       knowledge_mentor: "",
       writeup:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione iure totam, illum, repellendus, voluptas amet commodi non repellat pariatur voluptatibus sint quos! Ipsa placeat dolorum perferendis perspiciatis. Recusandae, aperiam libero!",
+        "HR Manager| Lead generation specialist| Social media manager & Customer  Relationship Manager",
       socials: {
-        facebooK: "",
+        linkedIn: "https://www.linkedin.com/in/victoria-bassey-iton-304a3b79/",
         youtube: "",
         twitter: "",
         instagram: "",
@@ -27,8 +26,8 @@ const Team = () => {
 
     {
       title: "CERTIFIED MASTER TRAINER|| QAQC LEAD ||HSE LEAD",
-      name: " David Udom",
-      experience: "20+ Years",
+      name: "ACHUENU CHUKWUEMEKE CHARLES",
+      experience: "",
       image:
         "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 

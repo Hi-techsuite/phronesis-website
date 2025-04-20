@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 import { services_data } from "../ServicesStatic"; // Import your data
 
 // Function to build hierarchical menu structure

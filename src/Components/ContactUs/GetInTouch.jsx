@@ -84,14 +84,14 @@ const GetInTouch = () => {
               +234-816-163-7797
             </a>
           </div>
-          <div>
+          {/* <div>
             <p className="font-[600] text-[22px]  text-[#20247b]">
               Office Address{" "}
             </p>
             <p className=" text-[#666666] text-[18px] leading-[30px]">
               Lakowe School Gate, Ibeju-Lekki Lagos, Nigeria.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-20">

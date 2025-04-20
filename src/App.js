@@ -16,6 +16,7 @@ import KnowledgeBank from "./Components/KnowledgeBank";
 import GetQuote from "./Components/Quote";
 import MegaMenu from "./Components/Header/MegaMenu";
 import ServicePageModel from "./Components/Home/ServicesPages/ServicesPageModel";
+import VerifyCertificate from "./Components/CertificateVerification";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/certification" element={<Certification />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/scope" element={<Scope />} />
+          <Route path="/verify-certificate" element={<VerifyCertificate />} />
           <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/services/:id/:title" element={<ServicePage />} />
           <Route path="/services/:url" element={<ServicePageModel />} />
