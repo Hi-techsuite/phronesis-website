@@ -10,16 +10,20 @@ import { fadeIn } from "../../utils/variants";
 const Team = () => {
   const mentors = [
     {
-      title: "Human Resources Management",
-      name: "Victoria  Bassey Iton",
+      title:
+        "Project Manager | Operations and Business Development Leader | CEO, Scaftech Engineering Services",
+      name: "Mabel Irom",
       experience: "",
       image:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww",
       knowledge_mentor: "",
-      writeup:
-        "HR Manager| Lead generation specialist| Social media manager & Customer  Relationship Manager",
+      writeup: `
+      A seasoned operations and business development executive with over a decade of impactful experience in engineering, equipment inspection, and project management within the oil, gas, and construction industries. Mabel Irom holds a strong academic and professional background in project delivery and technical operations, and currently serves as the Chief Executive Officer of Scaftech Engineering Services, a fast growing multidisciplinary engineering company in Nigeria.
+Mabel has consistently demonstrated excellence in building and executing client-centered solutions, overseeing complex projects, and managing high-performance teams across diverse technical domains. Her strategic leadership has positioned Scaftech as a preferred provider for third-party inspections, scaffolding services, equipment maintenance, and industry-focused training programs.
+Extensive hands-on and executive-level experience in overseeing statutory equipment inspections, rigging operations, mechanical systems maintenance, and technical personnel deployment. Her deep understanding of regulatory frameworks and industry standards has enabled the successful delivery of high-stakes projects for clients in manufacturing, construction, and oil & gas sectors.
+Proven track record of driving operational growth, fostering strategic partnerships, and aligning business operations with safety, quality, and performance goals. Her ability to balance business development with technical integrity has earned her recognition as a thought leader in engineering service innovation.`,
       socials: {
-        linkedIn: "https://www.linkedin.com/in/victoria-bassey-iton-304a3b79/",
+        linkedIn: "",
         youtube: "",
         twitter: "",
         instagram: "",
@@ -27,34 +31,17 @@ const Team = () => {
     },
 
     {
-      title: "CERTIFIED MASTER TRAINER|| QAQC LEAD ||HSE LEAD",
-      name: "ACHUENU CHUKWUEMEKE CHARLES",
+      title: "HSE Specialist | Mechanical Engineer | Oil & Gas Industry Expert",
+      name: "Osere Sikiru",
       experience: "",
       image:
         "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
       knowledge_mentor: "",
-      writeup: "",
-      // "He was a director of a proprietary trading firm in London and is one of the founders of a Wealth Management firm. Denis has been a regular on CNBC giving market analysis and has trained over 500 professional traders as well as thousands of retail traders. It is an absolute honour having someone with the experience that Mr. Taranov posses, as one of the speakers and mentors at Trader's Mind Hub.",
-      socials: {
-        facebooK: "",
-        youtube: "",
-        twitter: "",
-        instagram: "",
-      },
-    },
-
-    {
-      title: "Electromechanical Technician | Procurement | Admin Mgr",
-      name: "Peace Sunday",
-      experience: "10+ Years",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
-      knowledge_mentor: "",
-      writeup:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione iure totam, illum, repellendus, voluptas amet commodi non repellat pariatur voluptatibus sint quos! Ipsa placeat dolorum perferendis perspiciatis. Recusandae, aperiam libero!",
-
+      writeup: `
+      A seasoned Health, Safety, and Environment (HSE) professional with over 20 years of extensive experience in the oil and gas industry. Osere Sikiru holds a Bachelor of Engineering in Mechanical Engineering, Coren certified and has consistently demonstrated expertise in developing, implementing, and managing HSE systems and protocols to ensure compliance with international safety standards. His solid engineering background, combined with multiple professional HSE certifications, enables him to bridge technical and safety requirements seamlessly, fostering a culture of safety excellence across projects.
+Extensive hands-on and leadership experience across upstream and downstream oil and gas operations, including offshore and onshore facilities. Proven track record of reducing incident rates, improving safety performance, and enhancing organizational HSE culture.
+To contribute strategic HSE leadership within dynamic organizations, promoting operational excellence, regulatory compliance, and the safeguarding of people, assets, and the environment.`,
       socials: {
         facebooK: "",
         youtube: "",
@@ -65,15 +52,35 @@ const Team = () => {
 
     {
       title:
-        "HR Personnel | Virtual Assistant | Lead generation specialist | Social media manager & Customer Relationship Manager",
+        "Human Resources Professional | Talent Acquisition Specialist | Organizational Development Enthusiast",
       name: "Victoria Bassey Iton",
+      experience: "",
+      image:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+      knowledge_mentor: "",
+      writeup: `Victoria is a versatile Human Resources professional with a strong foundation in strategic people management and cross-sectoral experience. She holds a Bachelor of Business Administration (BBA) in Human Resource Management and an Executive MBA (e-MBA) in International Oil and Gas Trade, positioning her uniquely at the intersection of talent development and industry expertise.
+With a career marked by hands-on involvement in recruitment, performance management, organizational development, and policy implementation, Victoria brings a results-driven and people-centric approach to human capital management. Her work reflects a deep understanding of aligning HR frameworks with business goals—creating environments where both talent and organizations thrive.
+She is particularly skilled at navigating the complexities of workforce planning, employee engagement, and regulatory compliance, especially within high-stakes and evolving industries like energy and oil & gas. Her e-MBA further empowers her to bring global industry insights into HR strategies that drive innovation and growth`,
+      socials: {
+        facebooK: "",
+        youtube: "",
+        twitter: "",
+        instagram: "",
+      },
+    },
+
+    {
+      title:
+        "Senior Operations Manager/Project manger/QHSE/ Construction Manager",
+      name: "George A. Osum Engr",
       experience: "15+ Years",
       image:
         "https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
 
       knowledge_mentor: "",
-      writeup:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione iure totam, illum, repellendus, voluptas amet commodi non repellat pariatur voluptatibus sint quos! Ipsa placeat dolorum perferendis perspiciatis. Recusandae, aperiam libero!",
+      writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
+Drilling and Completion, Intervention/Workover operations, SURF Engineering/installation Management, Subsea Engineering/Installation/Equipment Rental/Topside Engineering/ Obsolescence management, Process/Petrochemical Engineering, Operations/Maintenance management, Contract Management, Project management expert, Project Controls & EVM- Cost Engineering, Procurement, Commercial management, QHSE /Construction management`,
 
       socials: {
         facebooK: "",
