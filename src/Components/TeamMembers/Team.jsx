@@ -15,7 +15,7 @@ const Team = () => {
       name: "Mabel Irom",
       experience: "",
       image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww",
+        "/new_img/image-2.jpg",
       knowledge_mentor: "",
       writeup: `
       A seasoned operations and business development executive with over a decade of impactful experience in engineering, equipment inspection, and project management within the oil, gas, and construction industries. Mabel Irom holds a strong academic and professional background in project delivery and technical operations, and currently serves as the Chief Executive Officer of Scaftech Engineering Services, a fast growing multidisciplinary engineering company in Nigeria.
@@ -35,7 +35,7 @@ Proven track record of driving operational growth, fostering strategic partnersh
       name: "Osere Sikiru",
       experience: "",
       image:
-        "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/new_img/image-3.jpg",
 
       knowledge_mentor: "",
       writeup: `
@@ -56,7 +56,7 @@ To contribute strategic HSE leadership within dynamic organizations, promoting o
       name: "Victoria Bassey Iton",
       experience: "",
       image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/new_img/images-4.jpg",
 
       knowledge_mentor: "",
       writeup: `Victoria is a versatile Human Resources professional with a strong foundation in strategic people management and cross-sectoral experience. She holds a Bachelor of Business Administration (BBA) in Human Resource Management and an Executive MBA (e-MBA) in International Oil and Gas Trade, positioning her uniquely at the intersection of talent development and industry expertise.
@@ -71,12 +71,86 @@ She is particularly skilled at navigating the complexities of workforce planning
     },
 
     {
-      title:
-        "Senior Operations Manager/Project manger/QHSE/ Construction Manager",
-      name: "George A. Osum Engr",
-      experience: "15+ Years",
+      title: "Senior Operations Manager/Project manager/QHSE/Construction Manager",
+      name: "George A. Osun ",
+      experience: "",
       image:
-        "https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "/new_img/image-5.jpg",
+
+      knowledge_mentor: "",
+      writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
+Drilling and Completion, Intervention/Workover operations, SURF Engineering/installation Management, Subsea Engineering/Installation/Equipment Rental/Topside Engineering/ Obsolescence management, Process/Petrochemical Engineering, Operations/Maintenance management, Contract Management, Project management expert, Project Controls & EVM- Cost Engineering, Procurement, Commercial management, QHSE /Construction management`,
+
+      socials: {
+        facebooK: "",
+        youtube: "",
+        twitter: "",
+        instagram: "",
+      },
+    },
+
+    {
+      title: "Portfolio Summary",
+      name: "DAVID UDOM E.",
+      experience: "",
+      image:
+        "/new_img/image-6.jpg",
+
+      knowledge_mentor: "",
+      writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
+Drilling and Completion, Intervention/Workover operations, SURF Engineering/installation Management, Subsea Engineering/Installation/Equipment Rental/Topside Engineering/ Obsolescence management, Process/Petrochemical Engineering, Operations/Maintenance management, Contract Management, Project management expert, Project Controls & EVM- Cost Engineering, Procurement, Commercial management, QHSE /Construction management`,
+
+      socials: {
+        facebooK: "",
+        youtube: "",
+        twitter: "",
+        instagram: "",
+      },
+    },
+
+    {
+      title: "CHAIRMAN",
+      name: "ACHENU C. CHARLES",
+      experience: "",
+      image:
+        "/new_img/image-7.jpg",
+
+      knowledge_mentor: "",
+      writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
+Drilling and Completion, Intervention/Workover operations, SURF Engineering/installation Management, Subsea Engineering/Installation/Equipment Rental/Topside Engineering/ Obsolescence management, Process/Petrochemical Engineering, Operations/Maintenance management, Contract Management, Project management expert, Project Controls & EVM- Cost Engineering, Procurement, Commercial management, QHSE /Construction management`,
+
+      socials: {
+        facebooK: "",
+        youtube: "",
+        twitter: "",
+        instagram: "",
+      },
+    },
+
+    //       title:
+    //         "Managing Director(MD)",
+    //       name: "Engineer Irom Mabel",
+    //       experience: "",
+    //       image:
+    //         "https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+
+    //       knowledge_mentor: "",
+    //       writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile:
+    // Drilling and Completion, Intervention/Workover operations, SURF Engineering/installation Management, Subsea Engineering/Installation/Equipment Rental/Topside Engineering/ Obsolescence management, Process/Petrochemical Engineering, Operations/Maintenance management, Contract Management, Project management expert, Project Controls & EVM- Cost Engineering, Procurement, Commercial management, QHSE /Construction management`,
+
+    //       socials: {
+    //         facebooK: "",
+    //         youtube: "",
+    //         twitter: "",
+    //         instagram: "",
+    //       },
+    //     },
+
+    {
+      title: "Executive Personal Asssitant and project lead",
+      name: "PEACE SUNDAY E.",
+      experience: "",
+      image: "/new_img/Image-1.jpg",
 
       knowledge_mentor: "",
       writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
