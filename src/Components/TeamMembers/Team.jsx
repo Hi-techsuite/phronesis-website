@@ -14,8 +14,7 @@ const Team = () => {
         "Project Manager | Operations and Business Development Leader | CEO, Scaftech Engineering Services",
       name: "Mabel Irom",
       experience: "",
-      image:
-        "/new_img/image-2.jpg",
+      image: "/new_img/image-2.jpg",
       knowledge_mentor: "",
       writeup: `
       A seasoned operations and business development executive with over a decade of impactful experience in engineering, equipment inspection, and project management within the oil, gas, and construction industries. Mabel Irom holds a strong academic and professional background in project delivery and technical operations, and currently serves as the Chief Executive Officer of Scaftech Engineering Services, a fast growing multidisciplinary engineering company in Nigeria.
@@ -34,8 +33,7 @@ Proven track record of driving operational growth, fostering strategic partnersh
       title: "HSE Specialist | Mechanical Engineer | Oil & Gas Industry Expert",
       name: "Osere Sikiru",
       experience: "",
-      image:
-        "/new_img/image-3.jpg",
+      image: "/new_img/image-3.jpg",
 
       knowledge_mentor: "",
       writeup: `
@@ -55,8 +53,7 @@ To contribute strategic HSE leadership within dynamic organizations, promoting o
         "Human Resources Professional | Talent Acquisition Specialist | Organizational Development Enthusiast",
       name: "Victoria Bassey Iton",
       experience: "",
-      image:
-        "/new_img/images-4.jpg",
+      image: "/new_img/images-4.jpg",
 
       knowledge_mentor: "",
       writeup: `Victoria is a versatile Human Resources professional with a strong foundation in strategic people management and cross-sectoral experience. She holds a Bachelor of Business Administration (BBA) in Human Resource Management and an Executive MBA (e-MBA) in International Oil and Gas Trade, positioning her uniquely at the intersection of talent development and industry expertise.
@@ -71,11 +68,11 @@ She is particularly skilled at navigating the complexities of workforce planning
     },
 
     {
-      title: "Senior Operations Manager/Project manager/QHSE/Construction Manager",
+      title:
+        "Senior Operations Manager/Project manager/QHSE/Construction Manager",
       name: "George A. Osun ",
       experience: "",
-      image:
-        "/new_img/image-5.jpg",
+      image: "/new_img/image-5.jpg",
 
       knowledge_mentor: "",
       writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
@@ -93,8 +90,7 @@ Drilling and Completion, Intervention/Workover operations, SURF Engineering/inst
       title: "Portfolio Summary",
       name: "DAVID UDOM E.",
       experience: "",
-      image:
-        "/new_img/image-6.jpg",
+      image: "/new_img/image-6.jpg",
 
       knowledge_mentor: "",
       writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
@@ -112,8 +108,7 @@ Drilling and Completion, Intervention/Workover operations, SURF Engineering/inst
       title: "CHAIRMAN",
       name: "ACHENU C. CHARLES",
       experience: "",
-      image:
-        "/new_img/image-7.jpg",
+      image: "/new_img/image-7.jpg",
 
       knowledge_mentor: "",
       writeup: `A motivated, seasoned research-based Engineer, Senior Project Manager with PMP & PRINCE2 Certification. He acquired a Master of Science Degree in Engineering Project Management from University of Manchester, United Kingdom, Bachelor's degree in Mechanical engineering and Diploma in Petroleum Economics and HND in Petroleum and Natural Gas Engineering respectively. He has over Twenty-five years of post-graduate industry experience while working on various Subsea Services/Flexible pipelines and EPC projects for Oil & Gas and Construction Industries in Nigeria.  Competency Profile: 
@@ -204,10 +199,6 @@ Drilling and Completion, Intervention/Workover operations, SURF Engineering/inst
                     <div className="HomeSection7_area_body_details_div1_unique_txt_title">
                       {/* Knowledge Mentor */}
                       {/* {t("knowledge-mentor")} */}
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Sunt fugiat natus aperiam id in, repudiandae, labore
-                      quidem voluptatum ipsa numquam odit. Quas in fuga
-                      praesentium ullam aspernatur, culpa ipsam inventore!
                     </div>
                   </div>
                 </div>
